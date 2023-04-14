@@ -95,7 +95,8 @@ font-family: 'Nosifer', cursive;
 
 /* car style */
 .cars{
- background: linear-gradient(to top,lightblue,lightpink);
+ background: linear-gradient(to bottom,rgb(137, 230, 141),rgb(205, 196, 10));
+ padding: 10px;
 }
 /* cars end */
 
