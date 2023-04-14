@@ -1,0 +1,73 @@
+  /* import google font */
+ @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inspiration&family=Roboto+Slab:wght@300;400&family=Sedgwick+Ave+Display&family=Stylish&family=Tilt+Prism&display=swap');
+
+ /* basic style */
+ *{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+ }
+ /* end basic */
+/* srikanth fonts
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Inspiration', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Stylish', sans-serif; */
+/* style for logo */
+.logo{
+   height: 55px;
+   font-family: 'Alfa Slab One', cursive;
+   font-weight: 400;
+   font-size:50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+/* main text */
+.main-text{
+   height:90vh;
+   display: flex;
+   flex-direction:column;
+   font-family: 'Stylish', sans-serif;
+   /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+   background-size: contain;
+   background-position:15% 0; */
+   justify-content: center;
+   align-items: center;
+   font-size: 70px;
+   font-weight: 400;
+}
+/* main-text para */
+
+/* india text */
+.india{
+     background: -webkit-linear-gradient(#ff6200,#ffffff,#22ff00);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   font-size: 80px;
+}
+.nagi{
+   font-size: 80px;
+}
+/* main div style */
+.main-div{
+
+   /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+   /* background-color: #c9f2c9; */
+   /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+  /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnUDItXSwSY1aetfc6kPDumbyiIeU3cb70uA&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/* quote division */
+.quote{
+   font-family: 'Inspiration', cursive;
+   font-weight: bolder;
+}
+
