@@ -71,3 +71,58 @@ font-family: 'Stylish', sans-serif; */
    font-weight: bolder;
 }
 
+
+/* ********************************************************************* */
+
+/* basic style */
+*{
+   margin: 0;
+   padding: 0;
+
+   /* background-color: rgba(0, 128, 0, 0.534); */
+}
+
+/* cars heading */
+.cars h1{
+font-family: 'Nosifer', cursive;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+/* cars end */
+
+/* car style */
+.cars{
+ background: linear-gradient(to top,lightblue,lightpink);
+}
+/* cars end */
+
+/* car-barnd */
+.brand_name h2{
+  text-transform: uppercase;
+  color:black;
+  font-weight: 700;
+  position: absolute;
+  top: 25px;
+  /* left: 40px; */
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.277);
+  padding: 5px;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+/* car barand end */
+
+/* car img */
+.img{
+  height: 200px;
+}
+/* end basic */
+
+/* ********************************************************************************************* */
