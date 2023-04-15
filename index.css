@@ -1,0 +1,542 @@
+  /* import google font */
+ @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inspiration&family=Roboto+Slab:wght@300;400&family=Sedgwick+Ave+Display&family=Stylish&family=Tilt+Prism&display=swap');
+
+ /* basic style */
+ *{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+   
+ }
+ /* end basic */
+ /* ************************************************************* */
+/* srikanth fonts
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Inspiration', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Stylish', sans-serif; 
+font-family: 'Tilt Prism', cursive;*/
+
+/* style for logo */
+
+/*                Media Query For Mobile Devices */
+
+/*          for small mobile */
+@media only screen and (max-width: 575.98px) { 
+
+   .logo{
+      height: 55px;
+      font-family: 'Tilt Prism', cursive;
+      font-weight: 400;
+      font-size:10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.466);
+      /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+      color: aliceblue;
+      padding-top:20px;
+   }
+   /* main text */
+   .main-text{
+      height:98vh;
+      display: flex;
+      flex-direction:column;
+      font-family: 'Stylish', sans-serif;
+      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+      justify-content: center;
+      align-items: center;
+      font-size:40px;
+      font-weight: 400;
+      color: aliceblue;
+       background: rgba(0, 0, 0, 0.466); 
+   }
+   .main-text>p{
+      text-align: center;
+   }
+   /* main-text para */
+   
+   /* india text */
+   .india{
+        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size:45px;
+   }
+   .nagi{
+      font-size:45px;
+      font-weight: 400;
+   }
+   /* main div style */
+   .main-div{
+   
+      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+      /* background-color: #c9f2c9; */
+      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+      background: url(./Assets/img/mountain-mobile.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; 
+   
+   
+   }
+   
+   /* quote division */
+   .quote{
+      font-family: 'Inspiration', cursive;
+      text-align: center;
+      font-size: 30px;
+   }
+}
+
+/*            for larger mobiles */
+@media only screen  and (max-width:767.98px) and (min-width: 576px)  { 
+ 
+   .logo{
+      height: 55px;
+      font-family: 'Tilt Prism', cursive;
+      font-weight: 400;
+      font-size:10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.466);
+      /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+      color: aliceblue;
+      padding-top:20px;
+   }
+   /* main text */
+   .main-text{
+      height:98vh;
+      display: flex;
+      flex-direction:column;
+      font-family: 'Stylish', sans-serif;
+      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+      justify-content: center;
+      align-items: center;
+      font-size:55px;
+      font-weight: 400;
+      color: aliceblue;
+       background: rgba(0, 0, 0, 0.466); 
+   }
+   .main-text>p{
+      text-align: center;
+   }
+   /* main-text para */
+   
+   /* india text */
+   .india{
+        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size:60px;
+   }
+   .nagi{
+      font-size:60px;
+      font-weight: 400;
+   }
+   /* main div style */
+   .main-div{
+   
+      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+      /* background-color: #c9f2c9; */
+      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+      background: url(./Assets/img/mountain-mobile.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; 
+   
+   
+   }
+   
+   /* quote division */
+   .quote{
+      font-family: 'Inspiration', cursive;
+      text-align: center;
+      font-size: 40px;
+   }
+
+   /* footer division start */
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media only screen  and (max-width:1199.98px) and (min-width:768px)  { 
+ 
+   .logo{
+      height: 55px;
+      font-family: 'Tilt Prism', cursive;
+      font-weight: 400;
+      font-size:10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.466);
+      /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+      color: aliceblue;
+      padding-top:20px;
+   }
+   /* main text */
+   .main-text{
+      height:98vh;
+      display: flex;
+      flex-direction:column;
+      font-family: 'Stylish', sans-serif;
+      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+      justify-content: center;
+      align-items: center;
+      font-size:84px;
+      font-weight: 400;
+      color: aliceblue;
+       background: rgba(0, 0, 0, 0.466); 
+   }
+   .main-text>p{
+      text-align: center;
+   }
+   /* main-text para */
+   
+   /* india text */
+   .india{
+        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size:86px;
+   }
+   .nagi{
+      font-size:86px;
+      font-weight: 400;
+   }
+   /* main div style */
+   .main-div{
+   
+      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+      /* background-color: #c9f2c9; */
+      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+      background: url(./Assets/img/mountain-mobile.jpg);
+     background-repeat: no-repeat;
+     background-size: cover; 
+   
+   
+   }
+   
+   /* quote division */
+   .quote{
+      font-family: 'Inspiration', cursive;
+      text-align: center;
+      font-size: 70px;
+   }
+
+   /* footer division start */
+
+}
+ 
+/*    // X-Large devices (large desktops, 1200px and up) */
+@media  only screen and (min-width: 1200px) { 
+   .logo{
+      height: 55px;
+      font-family: 'Tilt Prism', cursive;
+      font-weight: 400;
+      font-size:10px;
+      background-color: rgba(0, 0, 0, 0.466);
+      /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+      color: aliceblue;
+      padding-top:20px;
+     padding-left: 10px;
+   }
+   /* main text */
+   .main-text{
+      height:98vh;
+      display: flex;
+      flex-direction:column;
+      font-family: 'Stylish', sans-serif;
+      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+      justify-content: center;
+      align-items: center;
+      
+      font-size: 70px;
+      font-weight: 400;
+      color: aliceblue;
+       background: rgba(0, 0, 0, 0.466); 
+   }
+   /* main-text para */
+   
+   /* india text */
+   .india{
+        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 85px;
+   }
+   .nagi{
+      font-size: 85px;
+      font-weight: 400;
+   }
+   /* main div style */
+   .main-div{
+   
+      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+      /* background-color: #c9f2c9; */
+      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+      background: url(https://images.unsplash.com/photo-1666136470097-73422e061873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);
+     background-repeat: no-repeat;
+     background-size: cover; 
+   
+   
+   }
+   
+   /* quote division */
+   .quote{
+      font-family: 'Inspiration', cursive;
+      
+   }
+   /* **************************************************** */
+   /* footer division start */
+   .footer{
+      background: linear-gradient(274deg, rgba(41,10,5,1) 0%, rgba(1,7,55,1) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-right-radius:60px;
+      border-top-left-radius: 60px;
+      color: azure;
+   }
+   /* book and travel division */
+   .book{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: white 2px solid;
+   }
+   /* paragraph start */
+   .paragraph{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+   }
+   .paragraph>p{
+      text-align: center;
+     
+   }
+   /* contact footer start */
+   .contact{
+      display:flex;
+      flex-direction: row;
+     
+   }
+   /* mobile details division  */
+   .owner{
+      
+      display: flex;
+      flex-direction: column;
+      width:50%;
+      
+   }
+   /* address css */
+   .address{
+     
+      width: 50%;
+   }
+   .add-para{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-decoration: underline;
+   }
+   /* mobile css */
+   .mobile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+   /* csocial css */
+   .social{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+
+   }
+   .social>p,a{
+      margin: 5px;
+      color: white;
+   }
+   /* copyright division css */
+   .copyright{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .copyright>p,a{
+      text-decoration: none;
+      
+   }
+   /* heart css  */
+   .heart{
+      color: red;
+      height: 4px;
+   }
+   /* line css */
+   .line{
+     color: white;
+     font-size:20px;
+   }
+   hr{
+    color:white;
+    border-width: 3px;
+   }
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) { 
+    
+    
+   .logo{
+      height: 55px;
+      font-family: 'Tilt Prism', cursive;
+      font-weight: 400;
+      font-size:10px;
+      background-color: rgba(0, 0, 0, 0.466);
+      /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+      color: aliceblue;
+      padding-top:20px;
+     padding-left: 10px;
+   }
+   /* main text */
+   .main-text{
+      height:98vh;
+      display: flex;
+      flex-direction:column;
+      font-family: 'Stylish', sans-serif;
+      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+      justify-content: center;
+      align-items: center;
+      font-size: 70px;
+      font-weight: 400;
+      color: aliceblue;
+       background: rgba(0, 0, 0, 0.466); 
+   }
+   /* main-text para */
+   
+   /* india text */
+   .india{
+        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      font-size: 85px;
+   }
+   .nagi{
+      font-size: 85px;
+      font-weight: 400;
+   }
+   /* main div style */
+   .main-div{
+   
+      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+      /* background-color: #c9f2c9; */
+      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+      background: url(https://images.unsplash.com/photo-1666136470097-73422e061873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);
+     background-repeat: no-repeat;
+     background-size: cover; 
+   
+   
+   }
+   
+   /* quote division */
+   .quote{
+      font-family: 'Inspiration', cursive;
+      
+   }
+}
+
+
+/* ********************************************************************* */
+
+/* basic style */
+*{
+   margin: 0;
+   padding: 0;
+
+}
+
+/* cars heading */
+.cars h1{
+font-family: 'Nosifer', cursive;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+/* cars end */
+
+/* car style */
+.cars{
+ background: linear-gradient(to top,lightblue,lightpink);
+}
+/* cars end */
+
+/* car-barnd */
+.brand_name h2{
+  text-transform: uppercase;
+  color:black;
+  font-weight: 700;
+  position: absolute;
+  top: 25px;
+  /* left: 40px; */
+  border-radius: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.277);
+  padding: 5px;
+  text-align: center;
+  font-family: 'Cinzel Decorative', cursive;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+/* car barand end */
+
+/* car img */
+.img{
+  height: 200px;
+}
+/* end basic */
+
+/* ********************************************************************************************* */
