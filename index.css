@@ -126,3 +126,25 @@ font-family: 'Nosifer', cursive;
 /* end basic */
 
 /* ********************************************************************************************* */
+
+/* travel css */
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;427;600&family=Dancing+Script:wght@600&family=Libre+Baskerville:ital@1&family=Lobster&family=Lora&family=Tilt+Prism&display=swap'); 
+
+.travel h2{
+    margin-bottom: 0px;
+    text-align: center;
+    border: 0px solid salmon;
+    background-color: aqua;
+font-family: 'Libre Baskerville', serif; 
+
+}
+.brand h5{
+    font-size: 20px;
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+#age img{
+    width: 100vb;
+}
