@@ -333,6 +333,7 @@ font-family: 'Tilt Prism', cursive;*/
       align-items: center;
       justify-content: center;
       border-bottom: white 2px solid;
+      height:50px;
    }
    /* paragraph start */
    .paragraph{
@@ -340,7 +341,7 @@ font-family: 'Tilt Prism', cursive;*/
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      
+      height:30px;
    }
    .paragraph>p{
       text-align: center;
@@ -350,7 +351,7 @@ font-family: 'Tilt Prism', cursive;*/
    .contact{
       display:flex;
       flex-direction: row;
-     
+      height:90px;
    }
    /* mobile details division  */
    .owner{
