@@ -8,6 +8,8 @@ $(document).ready(function () {
       $(".slider__wrap").addClass("slider__wrap--hacked");
     }, 1000);
   });
+
+  
   
   function goToSlide(number) {
     $(".slider__slide").removeClass("slider__slide--active");

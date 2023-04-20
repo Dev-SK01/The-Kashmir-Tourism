@@ -1375,6 +1375,7 @@ font-family: 'Tilt Prism', cursive;
  .slider__slide:nth-child(1) .slider__back, .slider__slide:nth-child(1) .slider__inner {
    background-image: url(https://images.pexels.com/photos/14579469/pexels-photo-14579469.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
  }
+ 
  .slider__slide:nth-child(2) .slider__back, .slider__slide:nth-child(2) .slider__inner {
    background-image: url(https://images.pexels.com/photos/10456959/pexels-photo-10456959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
  }
