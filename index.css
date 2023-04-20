@@ -1,18 +1,19 @@
   /* import google font */
- 
+
   @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script&family=EB+Garamond:ital@0;1&family=Inspiration&family=Nosifer&family=Roboto+Slab:wght@300;400&family=Sedgwick+Ave+Display&family=Stylish&family=Tilt+Prism&display=swap');
 
 
- /* basic style */
- *{
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-   
- }
- /* end basic */
- /* ************************************************************* */
-/*  fonts
+  /* basic style */
+  * {
+     margin: 0;
+     padding: 0;
+     /* cursor: pointer; */
+    
+  }
+
+  /* end basic */
+  /* ************************************************************* */
+  /*  fonts
     font-family: 'Alfa Slab One', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'EB Garamond', serif;
@@ -24,109 +25,117 @@ font-family: 'Stylish', sans-serif;
 font-family: 'Tilt Prism', cursive;
 */
 
-/* style for logo */
+  /* style for logo */
 
-/*                Media Query For Mobile Devices */
+  /*                Media Query For Mobile Devices */
 
-/*          for small mobile */
-@media only screen and (max-width: 575.98px) { 
+  /*          for small mobile */
+  @media only screen and (max-width: 575.98px) {
 
-   .logo{
-      height: 55px;
-      font-family: 'Tilt Prism', cursive;
-      font-weight: 400;
-      font-size:10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.466);
-      /* background-image: url(./Assets/img/bg-footer.svg);
+     .logo {
+        height: 55px;
+        font-family: 'Tilt Prism', cursive;
+        font-weight: 400;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.466);
+        /* background-image: url(./Assets/img/bg-footer.svg);
       background-size: contain;
       background-position:center ;
       background-repeat: no-repeat; */
-      color: aliceblue;
-      padding-top:20px;
-   }
-   /* main text */
-   .main-text{
-      height:98vh;
-      display: flex;
-      flex-direction:column;
-      font-family: 'Stylish', sans-serif;
-      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+        color: aliceblue;
+        padding-top: 20px;
+     }
+
+     /* main text */
+     .main-text {
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Stylish', sans-serif;
+        /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
       background-size: contain;
       background-position:15% 0; */
-      justify-content: center;
-      align-items: center;
-      font-size:40px;
-      font-weight: 400;
-      color: aliceblue;
-       background: rgba(0, 0, 0, 0.466); 
-   }
-   .main-text>p{
-      text-align: center;
-   }
-   /* main-text para */
-   
-   /* india text */
-   .india{
-        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      font-size:45px;
-   }
-   .nagi{
-      font-size:45px;
-      font-weight: 400;
-   }
-   /* main div style */
-   .main-div{
-   
-      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-      /* background-color: #c9f2c9; */
-      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-      background: url(./Assets/img/mountain-mobile.jpg);
-     background-repeat: no-repeat;
-     background-size: cover; 
-   
-   
-   }
-   
-   /* quote division */
-   .quote{
-      font-family: 'Inspiration', cursive;
-      text-align: center;
-      font-size: 30px;
-   }
-   /* footer division start */
-   .footer{
-      background: linear-gradient(274deg, rgba(41,10,5,1) 0%, rgba(1,7,55,1) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: azure;
-   }
-   /* book and travel division */
-   .book{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: underline;
-      height:50px;
-      font-family: 'Dancing Script', cursive;
-   }
-   /* paragraph start */
-   .paragraph{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height:30px;
-      margin-top: 10px;
-      font-family: 'EB Garamond', serif;
-    /*
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 400;
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.466);
+     }
+
+     .main-text>p {
+        text-align: center;
+     }
+
+     /* main-text para */
+
+     /* india text */
+     .india {
+        background: -webkit-linear-gradient(#ff5e00, #ffffffce, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size: 45px;
+     }
+
+     .nagi {
+        font-size: 45px;
+        font-weight: 400;
+     }
+
+     /* main div style */
+     .main-div {
+
+        /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background-color: #c9f2c9; */
+        /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+        background: url(./Assets/img/mountain-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+     }
+
+     /* quote division */
+     .quote {
+        font-family: 'Inspiration', cursive;
+        text-align: center;
+        font-size: 30px;
+     }
+
+     /* footer division start */
+     .footer {
+        background: linear-gradient(274deg, rgba(41, 10, 5, 1) 0%, rgba(1, 7, 55, 1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: azure;
+     }
+
+     /* book and travel division */
+     .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+        height: 50px;
+        font-family: 'Dancing Script', cursive;
+     }
+
+     /* paragraph start */
+     .paragraph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30px;
+        margin-top: 10px;
+        font-family: 'EB Garamond', serif;
+        /*
 font-family: 'Alfa Slab One', cursive;
 font-family: 'Dancing Script', cursive;
 font-family: 'EB Garamond', serif;
@@ -137,965 +146,1289 @@ font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Stylish', sans-serif;
 font-family: 'Tilt Prism', cursive; 
      */
-   }
-   .paragraph>p{
-      text-align: center;
-     
-   }
-   /* contact footer start */
-   .contact{
-      display:flex;
-      flex-direction: row;
-      height:150px;
-      font-size:14.5px;
-      font-family: 'Stylish', sans-serif;
-      /* font-family: 'Alfa Slab One', cursive; 
+     }
+
+     .paragraph>p {
+        text-align: center;
+
+     }
+
+     /* contact footer start */
+     .contact {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        font-size: 14.5px;
+        font-family: 'Stylish', sans-serif;
+        /* font-family: 'Alfa Slab One', cursive; 
       font-family: 'Inspiration', cursive;
       font-family: 'Roboto Slab', serif;
       font-family: 'Sedgwick Ave Display', cursive;
       font-family: 'Stylish', sans-serif; 
       font-family: 'Tilt Prism', cursive; */
-    }
-   /* mobile details division  */
-   .owner{
-      
-      display: flex;
-      flex-direction: column;
-      width:50%;
-      
-   }
-   /* address css */
-   .address{
-     
-      width: 50%;
-   }
-   .add-para{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-decoration: underline;
-   }
-   /* mobile css */
-   .mobile{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-   }
-   /* csocial css */
-   .social{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
+     }
 
-   }
-   .social>p,a{
-      margin: 5px;
-      color: white;
-      font-size:15px;
-   }
-   /* copyright division css */
-   .copyright{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .copyright>p,a{
-      text-decoration: none;
-      font-family: 'Nosifer', cursive;
-      font-size:10px;
-   }
-   /* heart css  */
-   .heart{
-      color: red;
-      height: 4px;
-   }
-   /* line css */
-   .line{
-     color: white;
-     font-size:20px;
-     display: none;
-   }
-   .mobil-ln{
-      color: white; 
-      font-size:20px; 
-   }
-   hr{
-    color:white;
-    border-width: 3px;
-   }
-}
+     /* mobile details division  */
+     .owner {
 
-/*            for larger mobiles */
-@media only screen  and (max-width:767.98px) and (min-width: 576px)  { 
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+     }
+
+     /* address css */
+     .address {
+
+        width: 50%;
+     }
+
+     .add-para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: underline;
+     }
+
+     /* mobile css */
+     .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+     }
+
+     /* csocial css */
+     .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+     }
+
+     .social>p,
+     a {
+        margin: 5px;
+        color: white;
+        font-size: 15px;
+     }
+
+     /* copyright division css */
+     .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .copyright>p,
+     a {
+        text-decoration: none;
+        font-family: 'Nosifer', cursive;
+        font-size: 10px;
+     }
+
+     /* heart css  */
+     .heart {
+        color: red;
+        height: 4px;
+     }
+
+     /* line css */
+     .line {
+        color: white;
+        font-size: 20px;
+        display: none;
+     }
+
+     .mobil-ln {
+        color: white;
+        font-size: 20px;
+     }
+
+     hr {
+        color: white;
+        border-width: 3px;
+     }
+  }
+
+  /*            for larger mobiles */
+  @media only screen and (max-width:767.98px) and (min-width: 576px) {
+
+     .logo {
+        height: 55px;
+        font-family: 'Tilt Prism', cursive;
+        font-weight: 400;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.466);
+        /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+        color: aliceblue;
+        padding-top: 20px;
+     }
+
+     /* main text */
+     .main-text {
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Stylish', sans-serif;
+        /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+        justify-content: center;
+        align-items: center;
+        font-size: 55px;
+        font-weight: 400;
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.466);
+     }
+
+     .main-text>p {
+        text-align: center;
+     }
+
+     /* main-text para */
+
+     /* india text */
+     .india {
+        background: -webkit-linear-gradient(#ff5e00, #ffffffce, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size: 60px;
+     }
+
+     .nagi {
+        font-size: 60px;
+        font-weight: 400;
+     }
+
+     /* main div style */
+     .main-div {
+
+        /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background-color: #c9f2c9; */
+        /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+        background: url(./Assets/img/mountain-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+     }
+
+     /* quote division */
+     .quote {
+        font-family: 'Inspiration', cursive;
+        text-align: center;
+        font-size: 40px;
+     }
+
+     /* footer division start */
+     /* footer division start */
+     .footer {
+        background: linear-gradient(274deg, rgba(41, 10, 5, 1) 0%, rgba(1, 7, 55, 1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: azure;
+     }
+
+     /* book and travel division */
+     .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+        height: 50px;
+        font-family: 'Dancing Script', cursive;
+     }
+
+     /* paragraph start */
+     .paragraph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30px;
+        font-family: 'EB Garamond', serif;
+        /*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Inspiration', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Stylish', sans-serif;
+font-family: 'Tilt Prism', cursive; 
+     */
+     }
+
+     .paragraph>p {
+        text-align: center;
+
+     }
+
+     /* contact footer start */
+     .contact {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        font-family: 'Stylish', sans-serif;
+        /* font-family: 'Alfa Slab One', cursive; 
+      font-family: 'Inspiration', cursive;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Sedgwick Ave Display', cursive;
+      font-family: 'Stylish', sans-serif; 
+      font-family: 'Tilt Prism', cursive; */
+     }
+
+     /* mobile details division  */
+     .owner {
+
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+     }
+
+     /* address css */
+     .address {
+
+        width: 50%;
+     }
+
+     .add-para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: underline;
+     }
+
+     /* mobile css */
+     .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+     }
+
+     /* csocial css */
+     .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+     }
+
+     .social>p,
+     a {
+        margin: 5px;
+        color: white;
+     }
+
+     /* copyright division css */
+     .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .copyright>p,
+     a {
+        text-decoration: none;
+        font-family: 'Nosifer', cursive;
+        font-size: 12px;
+     }
+
+     /* heart css  */
+     .heart {
+        color: red;
+        height: 4px;
+     }
+
+     /* line css */
+     .line {
+        color: white;
+        font-size: 20px;
+        display: none;
+     }
+
+     .mobil-ln {}
+
+     hr {
+        color: white;
+        border-width: 3px;
+     }
+
+  }
+
+  /* // Medium devices (tablets, less than 992px) */
+  @media only screen and (max-width:1199.98px) and (min-width:768px) {
+
+     .logo {
+        height: 55px;
+        font-family: 'Tilt Prism', cursive;
+        font-weight: 400;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.466);
+        /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+        color: aliceblue;
+        padding-top: 20px;
+     }
+
+     /* main text */
+     .main-text {
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Stylish', sans-serif;
+        /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+        justify-content: center;
+        align-items: center;
+        font-size: 84px;
+        font-weight: 400;
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.466);
+     }
+
+     .main-text>p {
+        text-align: center;
+     }
+
+     /* main-text para */
+
+     /* india text */
+     .india {
+        background: -webkit-linear-gradient(#ff5e00, #ffffffce, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size: 86px;
+     }
+
+     .nagi {
+        font-size: 86px;
+        font-weight: 400;
+     }
+
+     /* main div style */
+     .main-div {
+
+        /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background-color: #c9f2c9; */
+        /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+        background: url(./Assets/img/mountain-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+     }
+
+     /* quote division */
+     .quote {
+        font-family: 'Inspiration', cursive;
+        text-align: center;
+        font-size: 70px;
+     }
+
+     /* footer division start */
+     /* footer division start */
+     .footer {
+        background: linear-gradient(274deg, rgba(41, 10, 5, 1) 0%, rgba(1, 7, 55, 1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: azure;
+     }
+
+     /* book and travel division */
+     .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+        height: 50px;
+        font-family: 'Dancing Script', cursive;
+     }
+
+     /* paragraph start */
+     .paragraph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30px;
+        font-family: 'EB Garamond', serif;
+        /*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Inspiration', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Stylish', sans-serif;
+font-family: 'Tilt Prism', cursive; 
+     */
+     }
+
+     .paragraph>p {
+        text-align: center;
+
+     }
+
+     /* contact footer start */
+     .contact {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+        font-family: 'Stylish', sans-serif;
+        /* font-family: 'Alfa Slab One', cursive; 
+      font-family: 'Inspiration', cursive;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Sedgwick Ave Display', cursive;
+      font-family: 'Stylish', sans-serif; 
+      font-family: 'Tilt Prism', cursive; */
+     }
+
+     /* mobile details division  */
+     .owner {
+
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+     }
+
+     .break {
+        display: none;
+     }
+
+     /* address css */
+     .address {
+
+        width: 50%;
+     }
+
+     .add-para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: underline;
+     }
+
+     /* mobile css */
+     .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+     }
+
+     /* csocial css */
+     .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+     }
+
+     .social>p,
+     a {
+        margin: 5px;
+        color: white;
+     }
+
+     /* copyright division css */
+     .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .copyright>p,
+     a {
+        text-decoration: none;
+        font-family: 'Nosifer', cursive;
+        font-size: 13px;
+     }
+
+     /* heart css  */
+     .heart {
+        color: red;
+        height: 4px;
+     }
+
+     /* line css */
+     .line {
+        color: white;
+        font-size: 20px;
+        display: none;
+     }
+
+     .mobil-ln {
+        font-size: 20px;
+     }
+
+     hr {
+        color: white;
+        border-width: 3px;
+     }
+
+  }
+
+  /*    // X-Large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+     .logo {
+        height: 55px;
+        font-family: 'Tilt Prism', cursive;
+        font-weight: 400;
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, 0.466);
+        /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+        color: aliceblue;
+        padding-top: 20px;
+        padding-left: 10px;
+     }
+
+     /* main text */
+     .main-text {
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Stylish', sans-serif;
+        /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+        justify-content: center;
+        align-items: center;
+
+        font-size: 70px;
+        font-weight: 400;
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.466);
+     }
+
+     /* main-text para */
+
+     /* india text */
+     .india {
+        background: -webkit-linear-gradient(#ff5e00, #ffffffce, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size: 85px;
+     }
+
+     .nagi {
+        font-size: 85px;
+        font-weight: 400;
+     }
+
+     /* main div style */
+     .main-div {
+
+        /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background-color: #c9f2c9; */
+        /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+        background: url(https://images.unsplash.com/photo-1666136470097-73422e061873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+     }
+
+     /* quote division */
+     .quote {
+        font-family: 'Inspiration', cursive;
+
+     }
+
+     /* **************************************************** */
+     /* footer division start */
+     .footer {
+        background: linear-gradient(274deg, rgba(41, 10, 5, 1) 0%, rgba(1, 7, 55, 1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: azure;
+     }
+
+     /* book and travel division */
+     .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+        height: 50px;
+        font-family: 'Dancing Script', cursive;
+     }
+
+     /* paragraph start */
+     .paragraph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30px;
+        font-family: 'EB Garamond', serif;
+        /*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Inspiration', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Stylish', sans-serif;
+font-family: 'Tilt Prism', cursive; 
+     */
+     }
+
+     .paragraph>p {
+        text-align: center;
+
+     }
+
+     /* contact footer start */
+     .contact {
+        display: flex;
+        flex-direction: row;
+        height: 90px;
+        font-family: 'Stylish', sans-serif;
+        /* font-family: 'Alfa Slab One', cursive; 
+      font-family: 'Inspiration', cursive;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Sedgwick Ave Display', cursive;
+      font-family: 'Stylish', sans-serif; 
+      font-family: 'Tilt Prism', cursive; */
+     }
+
+     /* mobile details division  */
+     .owner {
+
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+     }
+
+     /* address css */
+     .address {
+
+        width: 50%;
+     }
+
+     .add-para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: underline;
+     }
+
+     /* mobile css */
+     .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+     }
+
+     /* csocial css */
+     .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+     }
+
+     .social>p,
+     a {
+        margin: 5px;
+        color: white;
+     }
+
+     /* copyright division css */
+     .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .copyright>p,
+     a {
+        text-decoration: none;
+        font-family: 'Nosifer', cursive;
+        font-size: 13px;
+     }
+
+     /* heart css  */
+     .heart {
+        color: red;
+        height: 4px;
+     }
+
+     /* line css */
+     .line {
+        color: white;
+        font-size: 20px;
+     }
+
+     .mobil-ln {
+        display: none;
+     }
+
+     .break {
+        display: none;
+     }
+
+     hr {
+        color: white;
+        border-width: 3px;
+     }
+  }
+
+  /* // XX-Large devices (larger desktops, 1400px and up) */
+  @media only screen and (min-width: 1400px) {
+
+
+     .logo {
+        height: 55px;
+        font-family: 'Tilt Prism', cursive;
+        font-weight: 400;
+        font-size: 10px;
+        background-color: rgba(0, 0, 0, 0.466);
+        /* background-image: url(./Assets/img/bg-footer.svg);
+      background-size: contain;
+      background-position:center ;
+      background-repeat: no-repeat; */
+        color: aliceblue;
+        padding-top: 20px;
+        padding-left: 10px;
+     }
+
+     /* main text */
+     .main-text {
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Stylish', sans-serif;
+        /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
+      background-size: contain;
+      background-position:15% 0; */
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+        font-weight: 400;
+        color: aliceblue;
+        background: rgba(0, 0, 0, 0.466);
+     }
+
+     /* main-text para */
+
+     /* india text */
+     .india {
+        background: -webkit-linear-gradient(#ff5e00, #ffffffce, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 400;
+        font-size: 85px;
+     }
+
+     .nagi {
+        font-size: 85px;
+        font-weight: 400;
+     }
+
+     /* main div style */
+     .main-div {
+
+        /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background-color: #c9f2c9; */
+        /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
+        /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
+        background: url(https://images.unsplash.com/photo-1666136470097-73422e061873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+     }
+
+     /* quote division */
+     .quote {
+        font-family: 'Inspiration', cursive;
+
+     }
+
+     /* footer division start */
+     .footer {
+        background: linear-gradient(274deg, rgba(41, 10, 5, 1) 0%, rgba(1, 7, 55, 1) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: azure;
+     }
+
+     /* book and travel division */
+     .book {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: underline;
+        height: 50px;
+        font-family: 'Dancing Script', cursive;
+     }
+
+     /* paragraph start */
+     .paragraph {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 30px;
+        font-family: 'EB Garamond', serif;
+        /*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Inspiration', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Stylish', sans-serif;
+font-family: 'Tilt Prism', cursive; 
+     */
+     }
+
+     .paragraph>p {
+        text-align: center;
+
+     }
+
+     /* contact footer start */
+     .contact {
+        display: flex;
+        flex-direction: row;
+        height: 90px;
+        font-family: 'Stylish', sans-serif;
+        /* font-family: 'Alfa Slab One', cursive; 
+      font-family: 'Inspiration', cursive;
+      font-family: 'Roboto Slab', serif;
+      font-family: 'Sedgwick Ave Display', cursive;
+      font-family: 'Stylish', sans-serif; 
+      font-family: 'Tilt Prism', cursive; */
+     }
+
+     /* mobile details division  */
+     .owner {
+
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+     }
+
+     /* address css */
+     .address {
+
+        width: 50%;
+     }
+
+     .add-para {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-decoration: underline;
+     }
+
+     /* mobile css */
+     .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+     }
+
+     /* csocial css */
+     .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+     }
+
+     .social>p,
+     a {
+        margin: 5px;
+        color: white;
+     }
+
+     /* copyright division css */
+     .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .copyright>p,
+     a {
+        text-decoration: none;
+        font-family: 'Nosifer', cursive;
+        font-size: 13px;
+     }
+
+     /* heart css  */
+     .heart {
+        color: red;
+        height: 4px;
+     }
+
+     /* line css */
+     .line {
+        color: white;
+        font-size: 20px;
+     }
+
+     .mobil-ln {
+        display: none;
+     }
+
+     .break {
+        display: none;
+     }
+
+     hr {
+        color: white;
+        border-width: 3px;
+     }
+  }
+
+
+  /* ********************************************************************* */
+
+  /* basic style */
+
  
-   .logo{
-      height: 55px;
-      font-family: 'Tilt Prism', cursive;
-      font-weight: 400;
-      font-size:10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.466);
-      /* background-image: url(./Assets/img/bg-footer.svg);
-      background-size: contain;
-      background-position:center ;
-      background-repeat: no-repeat; */
-      color: aliceblue;
-      padding-top:20px;
-   }
-   /* main text */
-   .main-text{
-      height:98vh;
-      display: flex;
-      flex-direction:column;
-      font-family: 'Stylish', sans-serif;
-      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
-      background-size: contain;
-      background-position:15% 0; */
-      justify-content: center;
-      align-items: center;
-      font-size:55px;
-      font-weight: 400;
-      color: aliceblue;
-       background: rgba(0, 0, 0, 0.466); 
-   }
-   .main-text>p{
-      text-align: center;
-   }
-   /* main-text para */
-   
-   /* india text */
-   .india{
-        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      font-size:60px;
-   }
-   .nagi{
-      font-size:60px;
-      font-weight: 400;
-   }
-   /* main div style */
-   .main-div{
-   
-      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-      /* background-color: #c9f2c9; */
-      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-      background: url(./Assets/img/mountain-mobile.jpg);
-     background-repeat: no-repeat;
-     background-size: cover; 
-   
-   
-   }
-   
-   /* quote division */
-   .quote{
-      font-family: 'Inspiration', cursive;
-      text-align: center;
-      font-size: 40px;
-   }
+  .charges{
+   text-align: center;
+   margin-top:60px;
+   color: white;
+  }
+  .card{
+   background:transparent;
+  }
+  .fullday{
+   text-decoration:underline;
+   font-weight: bolder;
+  }
+  
+  /* end basic */
 
-   /* footer division start */
-   /* footer division start */
-   .footer{
-      background: linear-gradient(274deg, rgba(41,10,5,1) 0%, rgba(1,7,55,1) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: azure;
-   }
-   /* book and travel division */
-   .book{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: underline;
-      height:50px;
-      font-family: 'Dancing Script', cursive;
-   }
-   /* paragraph start */
-   .paragraph{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height:30px;
-      font-family: 'EB Garamond', serif;
-    /*
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Inspiration', cursive;
-font-family: 'Nosifer', cursive;
-font-family: 'Roboto Slab', serif;
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Stylish', sans-serif;
-font-family: 'Tilt Prism', cursive; 
-     */
-   }
-   .paragraph>p{
-      text-align: center;
-     
-   }
-   /* contact footer start */
-   .contact{
-      display:flex;
-      flex-direction: row;
-      height:150px;
-      font-family: 'Stylish', sans-serif;
-      /* font-family: 'Alfa Slab One', cursive; 
-      font-family: 'Inspiration', cursive;
-      font-family: 'Roboto Slab', serif;
-      font-family: 'Sedgwick Ave Display', cursive;
-      font-family: 'Stylish', sans-serif; 
-      font-family: 'Tilt Prism', cursive; */
-    }
-   /* mobile details division  */
-   .owner{
-      
-      display: flex;
-      flex-direction: column;
-      width:50%;
-      
-   }
-   /* address css */
-   .address{
-     
-      width: 50%;
-   }
-   .add-para{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-decoration: underline;
-   }
-   /* mobile css */
-   .mobile{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-   }
-   /* csocial css */
-   .social{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
+  /* ********************************************************************************************* */
+  /* ********************************************************************************************* */
 
-   }
-   .social>p,a{
-      margin: 5px;
-      color: white;
-   }
-   /* copyright division css */
-   .copyright{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .copyright>p,a{
-      text-decoration: none;
-      font-family: 'Nosifer', cursive;
-      font-size:12px;
-   }
-   /* heart css  */
-   .heart{
-      color: red;
-      height: 4px;
-   }
-   /* line css */
-   .line{
-     color: white;
-     font-size:20px;
-     display: none;
-   }
-   .mobil-ln{
-      
-   }
-   hr{
-    color:white;
-    border-width: 3px;
-   }
+  /* travel css */
+  .containers{
 
-}
+   overflow: hidden;
+  }
 
-/* // Medium devices (tablets, less than 992px) */
-@media only screen  and (max-width:1199.98px) and (min-width:768px)  { 
- 
-   .logo{
-      height: 55px;
-      font-family: 'Tilt Prism', cursive;
-      font-weight: 400;
-      font-size:10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.466);
-      /* background-image: url(./Assets/img/bg-footer.svg);
-      background-size: contain;
-      background-position:center ;
-      background-repeat: no-repeat; */
-      color: aliceblue;
-      padding-top:20px;
+  .slider {
+   position: relative;
+   height:300px;
+   width:100vw;
+   background: #777;
+   overflow: hidden;
+ }
+ .slider__wrap {
+   position: absolute;
+   width:100vw;
+   height:300px;
+   transform: translateX(100vw);
+   top: 0%;
+   left: 0;
+   right: auto;
+   overflow: hidden;
+   transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+   transform-origin: 0% 50%;
+   transition-delay: 450ms;
+   opacity: 0;
+ }
+ .slider__wrap--hacked {
+   opacity: 1;
+ }
+ .slider__back {
+   position: absolute;
+   width: 100%;
+   height:300px;
+   background-size: auto 100%;
+   background-position: center;
+   background-repeat: none;
+   transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ }
+ .slider__inner {
+   width: 100%;
+   height:300px;
+   position: absolute;
+   top: 0;
+   left: 0%;
+   background-size: auto 133.3333%;
+   background-position: center;
+   background-repeat: none;
+   transform: scale(0.75);
+   transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+   opacity: 0;
+   box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+   padding: 15vh;
+   box-sizing: border-box;
+ }
+ .slider__content {
+   position: relative;
+   top: 50%;
+   width: auto;
+   transform: translateY(-50%);
+   color: white;
+   font-family: "Heebo", sans-serif;
+   opacity: 0;
+   transition: opacity 450ms;
+ }
+ .slider__content h1 {
+   font-weight: 900;
+   font-size:24px;
+   line-height: 0.85;
+   margin-bottom: 0.75vh;
+   pointer-events: none;
+   text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
+ }
+ .slider__content a {
+   cursor: pointer;
+   font-size:20pxvh;
+   letter-spacing: 0.3vh;
+   font-weight: 100;
+   position: relative;
+ }
+ .slider__content a:after {
+   content: "";
+   display: block;
+   width: 9vh;
+   background: white;
+   height: 1px;
+   position: absolute;
+   top: 50%;
+   left: 6vh;
+   transform: translateY(-50%);
+   transform-origin: 0% 50%;
+   transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ }
+ .slider__content a:before {
+   content: "";
+   border-top: 1px solid white;
+   border-right: 1px solid white;
+   display: block;
+   width: 1vh;
+   height: 1vh;
+   transform: translateX(0) translateY(-50%) rotate(45deg);
+   position: absolute;
+   font-family: "Heebo", sans-serif;
+   font-weight: 100;
+   top: 50%;
+   left: 15vh;
+   transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ }
+ .slider__content a:hover:after {
+   transform: scaleX(1.5);
+   transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ }
+ .slider__content a:hover:before {
+   transform: translateX(6vh) translateY(-50%) rotate(45deg);
+   transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ }
+ .slider__slide {
+   position: absolute;
+   left: 0;
+   height: 100vh;
+   width: 100vw;
+   transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+   transition-delay: 600ms;
+   pointer-events: none;
+   z-index: 0;
+ }
+ .slider__slide--active {
+   transform: translatex(0%);
+   z-index: 2;
+ }
+ .slider__slide--active .slider__wrap {
+   transform: translateX(0);
+   transform-origin: 100% 50%;
+   opacity: 1;
+   -webkit-animation: none;
+           animation: none;
+ }
+ .slider__slide--active .slider__back {
+   filter: blur(1.5vh);
+   transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+   transition-delay: 900ms !important;
+ }
+ .slider__slide--active .slider__inner {
+   transform: scale(0.8);
+   box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+   pointer-events: auto;
+   opacity: 1;
+   transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+   transition-delay: 900ms;
+ }
+ .slider__slide--active .slider__content {
+   opacity: 1;
+   transition-delay: 1350ms;
+ }
+ .slider__slide:not(.slider__slide--active) .slider__wrap {
+   -webkit-animation-name: hack;
+           animation-name: hack;
+   -webkit-animation-duration: 900ms;
+           animation-duration: 900ms;
+   -webkit-animation-delay: 450ms;
+           animation-delay: 450ms;
+   -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+           animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ }
+ @-webkit-keyframes hack {
+   0% {
+     transform: translateX(0);
+     opacity: 1;
    }
-   /* main text */
-   .main-text{
-      height:98vh;
-      display: flex;
-      flex-direction:column;
-      font-family: 'Stylish', sans-serif;
-      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
-      background-size: contain;
-      background-position:15% 0; */
-      justify-content: center;
-      align-items: center;
-      font-size:84px;
-      font-weight: 400;
-      color: aliceblue;
-       background: rgba(0, 0, 0, 0.466); 
+   50% {
+     transform: translateX(-100vw);
+     opacity: 1;
    }
-   .main-text>p{
-      text-align: center;
+   51% {
+     transform: translateX(-100vw);
+     opacity: 0;
    }
-   /* main-text para */
-   
-   /* india text */
-   .india{
-        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      font-size:86px;
+   52% {
+     transform: translateX(100vw);
+     opacity: 0;
    }
-   .nagi{
-      font-size:86px;
-      font-weight: 400;
-   }
-   /* main div style */
-   .main-div{
-   
-      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-      /* background-color: #c9f2c9; */
-      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-      background: url(./Assets/img/mountain-mobile.jpg);
-     background-repeat: no-repeat;
-     background-size: cover; 
-   
-   
-   }
-   
-   /* quote division */
-   .quote{
-      font-family: 'Inspiration', cursive;
-      text-align: center;
-      font-size: 70px;
-   }
-
-   /* footer division start */
-   /* footer division start */
-   .footer{
-      background: linear-gradient(274deg, rgba(41,10,5,1) 0%, rgba(1,7,55,1) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: azure;
-   }
-   /* book and travel division */
-   .book{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: underline;
-      height:50px;
-      font-family: 'Dancing Script', cursive;
-   }
-   /* paragraph start */
-   .paragraph{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height:30px;
-      font-family: 'EB Garamond', serif;
-    /*
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Inspiration', cursive;
-font-family: 'Nosifer', cursive;
-font-family: 'Roboto Slab', serif;
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Stylish', sans-serif;
-font-family: 'Tilt Prism', cursive; 
-     */
-   }
-   .paragraph>p{
-      text-align: center;
-     
-   }
-   /* contact footer start */
-   .contact{
-      display:flex;
-      flex-direction: row;
-      height:150px;
-      font-family: 'Stylish', sans-serif;
-      /* font-family: 'Alfa Slab One', cursive; 
-      font-family: 'Inspiration', cursive;
-      font-family: 'Roboto Slab', serif;
-      font-family: 'Sedgwick Ave Display', cursive;
-      font-family: 'Stylish', sans-serif; 
-      font-family: 'Tilt Prism', cursive; */
-    }
-   /* mobile details division  */
-   .owner{
-      
-      display: flex;
-      flex-direction: column;
-      width:50%;
-      
-   }
-   .break{
-      display: none;
-   }
-   /* address css */
-   .address{
-     
-      width: 50%;
-   }
-   .add-para{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-decoration: underline;
-   }
-   /* mobile css */
-   .mobile{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-   }
-   /* csocial css */
-   .social{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
-
-   }
-   .social>p,a{
-      margin: 5px;
-      color: white;
-   }
-   /* copyright division css */
-   .copyright{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .copyright>p,a{
-      text-decoration: none;
-      font-family: 'Nosifer', cursive;
-      font-size:13px;
-   }
-   /* heart css  */
-   .heart{
-      color: red;
-      height: 4px;
-   }
-   /* line css */
-   .line{
-     color: white;
-     font-size:20px;
-     display: none;
-   }
-   .mobil-ln{
-      font-size:20px;
-   }
-   hr{
-    color:white;
-    border-width: 3px;
-   }
-
-}
- 
-/*    // X-Large devices (large desktops, 1200px and up) */
-@media  only screen and (min-width: 1200px) { 
-   .logo{
-      height: 55px;
-      font-family: 'Tilt Prism', cursive;
-      font-weight: 400;
-      font-size:10px;
-      background-color: rgba(0, 0, 0, 0.466);
-      /* background-image: url(./Assets/img/bg-footer.svg);
-      background-size: contain;
-      background-position:center ;
-      background-repeat: no-repeat; */
-      color: aliceblue;
-      padding-top:20px;
-     padding-left: 10px;
-   }
-   /* main text */
-   .main-text{
-      height:98vh;
-      display: flex;
-      flex-direction:column;
-      font-family: 'Stylish', sans-serif;
-      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
-      background-size: contain;
-      background-position:15% 0; */
-      justify-content: center;
-      align-items: center;
-      
-      font-size: 70px;
-      font-weight: 400;
-      color: aliceblue;
-       background: rgba(0, 0, 0, 0.466); 
-   }
-   /* main-text para */
-   
-   /* india text */
-   .india{
-        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      font-size: 85px;
-   }
-   .nagi{
-      font-size: 85px;
-      font-weight: 400;
-   }
-   /* main div style */
-   .main-div{
-   
-      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-      /* background-color: #c9f2c9; */
-      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-      background: url(https://images.unsplash.com/photo-1666136470097-73422e061873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);
-     background-repeat: no-repeat;
-     background-size: cover; 
-   
-   
-   }
-   
-   /* quote division */
-   .quote{
-      font-family: 'Inspiration', cursive;
-      
-   }
-   /* **************************************************** */
-   /* footer division start */
-   .footer{
-      background: linear-gradient(274deg, rgba(41,10,5,1) 0%, rgba(1,7,55,1) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: azure;
-   }
-   /* book and travel division */
-   .book{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: underline;
-      height:50px;
-      font-family: 'Dancing Script', cursive;
-   }
-   /* paragraph start */
-   .paragraph{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height:30px;
-      font-family: 'EB Garamond', serif;
-    /*
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Inspiration', cursive;
-font-family: 'Nosifer', cursive;
-font-family: 'Roboto Slab', serif;
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Stylish', sans-serif;
-font-family: 'Tilt Prism', cursive; 
-     */
-   }
-   .paragraph>p{
-      text-align: center;
-     
-   }
-   /* contact footer start */
-   .contact{
-      display:flex;
-      flex-direction: row;
-      height:90px;
-      font-family: 'Stylish', sans-serif;
-      /* font-family: 'Alfa Slab One', cursive; 
-      font-family: 'Inspiration', cursive;
-      font-family: 'Roboto Slab', serif;
-      font-family: 'Sedgwick Ave Display', cursive;
-      font-family: 'Stylish', sans-serif; 
-      font-family: 'Tilt Prism', cursive; */
-    }
-   /* mobile details division  */
-   .owner{
-      
-      display: flex;
-      flex-direction: column;
-      width:50%;
-      
-   }
-   /* address css */
-   .address{
-     
-      width: 50%;
-   }
-   .add-para{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-decoration: underline;
-   }
-   /* mobile css */
-   .mobile{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-   }
-   /* csocial css */
-   .social{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
-
-   }
-   .social>p,a{
-      margin: 5px;
-      color: white;
-   }
-   /* copyright division css */
-   .copyright{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .copyright>p,a{
-      text-decoration: none;
-      font-family: 'Nosifer', cursive;
-      font-size:13px;
-   }
-   /* heart css  */
-   .heart{
-      color: red;
-      height: 4px;
-   }
-   /* line css */
-   .line{
-     color: white;
-     font-size:20px;
-   }
-   .mobil-ln{
-      display: none;
-   }
-   .break{
-      display: none;
-   }
-   hr{
-    color:white;
-    border-width: 3px;
+   100% {
+     transform: translateX(100vw);
+     opacity: 1;
    }
  }
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media only screen and (min-width: 1400px) { 
-    
-    
-   .logo{
-      height: 55px;
-      font-family: 'Tilt Prism', cursive;
-      font-weight: 400;
-      font-size:10px;
-      background-color: rgba(0, 0, 0, 0.466);
-      /* background-image: url(./Assets/img/bg-footer.svg);
-      background-size: contain;
-      background-position:center ;
-      background-repeat: no-repeat; */
-      color: aliceblue;
-      padding-top:20px;
-     padding-left: 10px;
+ @keyframes hack {
+   0% {
+     transform: translateX(0);
+     opacity: 1;
    }
-   /* main text */
-   .main-text{
-      height:98vh;
-      display: flex;
-      flex-direction:column;
-      font-family: 'Stylish', sans-serif;
-      /* background: url(./Assets/img/bg-travel.svg) no-repeat center center ;
-      background-size: contain;
-      background-position:15% 0; */
-      justify-content: center;
-      align-items: center;
-      font-size: 70px;
-      font-weight: 400;
-      color: aliceblue;
-       background: rgba(0, 0, 0, 0.466); 
+   50% {
+     transform: translateX(-100vw);
+     opacity: 1;
    }
-   /* main-text para */
-   
-   /* india text */
-   .india{
-        background: -webkit-linear-gradient(#ff5e00,#ffffffce,green);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-weight: 400;
-      font-size: 85px;
+   51% {
+     transform: translateX(-100vw);
+     opacity: 0;
    }
-   .nagi{
-      font-size: 85px;
-      font-weight: 400;
+   52% {
+     transform: translateX(100vw);
+     opacity: 0;
    }
-   /* main div style */
-   .main-div{
-   
-      /* background: radial-gradient(circle, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-      /* background-color: #c9f2c9; */
-      /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
-     /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-      background: url(https://images.unsplash.com/photo-1666136470097-73422e061873?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80);
-     background-repeat: no-repeat;
-     background-size: cover; 
-   
-   
+   100% {
+     transform: translateX(100vw);
+     opacity: 1;
    }
-   
-   /* quote division */
-   .quote{
-      font-family: 'Inspiration', cursive;
-      
-   }
-   /* footer division start */
-   .footer{
-      background: linear-gradient(274deg, rgba(41,10,5,1) 0%, rgba(1,7,55,1) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: azure;
-   }
-   /* book and travel division */
-   .book{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: underline;
-      height:50px;
-      font-family: 'Dancing Script', cursive;
-   }
-   /* paragraph start */
-   .paragraph{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      height:30px;
-      font-family: 'EB Garamond', serif;
-    /*
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'EB Garamond', serif;
-font-family: 'Inspiration', cursive;
-font-family: 'Nosifer', cursive;
-font-family: 'Roboto Slab', serif;
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Stylish', sans-serif;
-font-family: 'Tilt Prism', cursive; 
-     */
-   }
-   .paragraph>p{
-      text-align: center;
-     
-   }
-   /* contact footer start */
-   .contact{
-      display:flex;
-      flex-direction: row;
-      height:90px;
-      font-family: 'Stylish', sans-serif;
-      /* font-family: 'Alfa Slab One', cursive; 
-      font-family: 'Inspiration', cursive;
-      font-family: 'Roboto Slab', serif;
-      font-family: 'Sedgwick Ave Display', cursive;
-      font-family: 'Stylish', sans-serif; 
-      font-family: 'Tilt Prism', cursive; */
-    }
-   /* mobile details division  */
-   .owner{
-      
-      display: flex;
-      flex-direction: column;
-      width:50%;
-      
-   }
-   /* address css */
-   .address{
-     
-      width: 50%;
-   }
-   .add-para{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-decoration: underline;
-   }
-   /* mobile css */
-   .mobile{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      
-   }
-   /* csocial css */
-   .social{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 10px;
-
-   }
-   .social>p,a{
-      margin: 5px;
-      color: white;
-   }
-   /* copyright division css */
-   .copyright{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-   .copyright>p,a{
-      text-decoration: none;
-      font-family: 'Nosifer', cursive;
-      font-size:13px;
-   }
-   /* heart css  */
-   .heart{
-      color: red;
-      height: 4px;
-   }
-   /* line css */
-   .line{
-     color: white;
-     font-size:20px;
-   }
-   .mobil-ln{
-      display: none;
-   }
-   .break{
-      display: none;
-   }
-   hr{
-    color:white;
-    border-width: 3px;
-   }
-}
+ }
+ .slider__slide:nth-child(1) .slider__back, .slider__slide:nth-child(1) .slider__inner {
+   background-image: url(https://pbs.twimg.com/media/EhTqeTQUcAAIrzj?format=jpg&name=4096x4096);
+ }
+ .slider__slide:nth-child(2) .slider__back, .slider__slide:nth-child(2) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(3) .slider__back, .slider__slide:nth-child(3) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(4) .slider__back, .slider__slide:nth-child(4) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(5) .slider__back, .slider__slide:nth-child(5) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(6) .slider__back, .slider__slide:nth-child(6) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(7) .slider__back, .slider__slide:nth-child(7) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(8) .slider__back, .slider__slide:nth-child(8) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(9) .slider__back, .slider__slide:nth-child(9) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(10) .slider__back, .slider__slide:nth-child(10) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(11) .slider__back, .slider__slide:nth-child(11) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(12) .slider__back, .slider__slide:nth-child(12) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(13) .slider__back, .slider__slide:nth-child(13) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ .slider__slide:nth-child(14) .slider__back, .slider__slide:nth-child(14) .slider__inner {
+   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
+ }
+ /* css for tittle */
+ .tittle{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background:  linear-gradient(274deg, rgba(41, 10, 5, 1) 0%, rgba(1, 7, 55, 1) 100%);
+   color: #fff;
+ }
+ .tittle>h1{
+   font-family: 'Dancing Script', cursive;
+ }
 
 
-/* ********************************************************************* */
+ /* End Of the Slider  */
 
-/* basic style */
-*{
-   margin: 0;
-   padding: 0;
+ /* css for cars and charges */
 
-}
-
-/* cars heading */
-.cars h1{
-font-family: 'Nosifer', cursive;
-  text-align: center;
-  font-weight: 500;
-  color: black;
-  font-size: 25px;
-  text-transform: uppercase;
-}
-/* cars end */
-
-/* car style */
-.cars{
- background: linear-gradient(to top,lightblue,lightpink);
-}
-/* cars end */
-
-/* car-barnd */
-.brand_name h2{
-  text-transform: uppercase;
-  color:black;
-  font-weight: 700;
-  position: absolute;
-  top: 25px;
-  /* left: 40px; */
-  border-radius: 20px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.277);
-  padding: 5px;
-  text-align: center;
-  font-family: 'Cinzel Decorative', cursive;
-  letter-spacing: 1px;
-  margin-top: 5px;
-  font-size: 20px;
-}
-/* car barand end */
-
-/* car img */
-.img{
-  height: 200px;
-}
-/* end basic */
-
-/* ********************************************************************************************* */
-/* ********************************************************************************************* */
-
-/* travel css */
-
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;427;600&family=Dancing+Script:wght@600&family=Libre+Baskerville:ital@1&family=Lobster&family=Lora&family=Tilt+Prism&display=swap'); 
-
-.travel h2{
-    margin-bottom: 0px;
-    text-align: center;
-    border: 0px solid salmon;
-    background-color: aqua;
-font-family: 'Libre Baskerville', serif; 
-
-}
-.brand h5{
-    font-size: 20px;
-    color: black;
-    font-weight: bolder;
-    text-align: center;
-    font-style: italic;
-}
-#age{
-    /* width: 50px; */
-    height: 200px;
-}
+ .charges{
+   z-index:-1;
+ }
