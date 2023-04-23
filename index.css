@@ -52,8 +52,9 @@ font-family: 'Tilt Prism', cursive;
         
      }
      .logo>h1{
-      font-weight: 300;
+      font-weight: 700;
       font-size: 24px;
+      font-family: 'Libre Baskerville', serif;
      }
 
      /* main text */
@@ -100,7 +101,7 @@ font-family: 'Tilt Prism', cursive;
         /* background-color: #c9f2c9; */
         /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
         /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-        background: url(https://media.istockphoto.com/id/509242466/vector/india-vector-illustration.jpg?s=612x612&w=0&k=20&c=BRQFcFkPz0a5kN1cdOSpaLA9U1Z3CEAqjNFDhV8cmk0=);
+        background:url(./Assets/img/nature-mob.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -156,7 +157,7 @@ font-family: 'Tilt Prism', cursive;
 
      .paragraph>p {
         text-align: center;
-
+        font-size:13px;
      }
 
      /* contact footer start */
@@ -187,12 +188,12 @@ font-family: 'Tilt Prism', cursive;
       
      }
 
-     .add-para {
+     .add-para>span{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        text-decoration: underline;
+        font-size:13px ;
      }
 
      /* mobile css */
@@ -278,6 +279,7 @@ font-family: 'Tilt Prism', cursive;
      .logo>h1{
       font-weight: 700;
       font-size: 35px;
+      font-family: 'Libre Baskerville', serif;
      }
 
      /* main text */
@@ -324,7 +326,7 @@ font-family: 'Tilt Prism', cursive;
         /* background-color: #c9f2c9; */
         /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
         /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-        background: url(https://media.istockphoto.com/id/509242466/vector/india-vector-illustration.jpg?s=612x612&w=0&k=20&c=BRQFcFkPz0a5kN1cdOSpaLA9U1Z3CEAqjNFDhV8cmk0=);
+        background: url(./Assets/img/nature-org.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -490,7 +492,7 @@ font-family: 'Tilt Prism', cursive;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.466);
+        background-color: rgba(0, 0, 0, 0.566);
         /* background-image: url(./Assets/img/bg-footer.svg);
       background-size: contain;
       background-position:center ;
@@ -501,6 +503,7 @@ font-family: 'Tilt Prism', cursive;
      .logo>h1{
       font-size: 40px;
       font-weight: 700;
+      font-family: 'Libre Baskerville', serif;
      }
 
      /* main text */
@@ -517,7 +520,7 @@ font-family: 'Tilt Prism', cursive;
         font-size: 84px;
         font-weight: 400;
         color: aliceblue;
-        background: rgba(0, 0, 0, 0.466);
+        background: rgba(0, 0, 0, 0.566);
      }
 
      .main-text>p {
@@ -547,7 +550,7 @@ font-family: 'Tilt Prism', cursive;
         /* background-color: #c9f2c9; */
         /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
         /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-        background: url(https://media.istockphoto.com/id/509242466/vector/india-vector-illustration.jpg?s=612x612&w=0&k=20&c=BRQFcFkPz0a5kN1cdOSpaLA9U1Z3CEAqjNFDhV8cmk0=);
+        background: url(./Assets/img/nature-org.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -728,6 +731,7 @@ font-family: 'Tilt Prism', cursive;
      .logo>h1{
       font-size: 45px;
       font-weight: 700;
+      font-family: 'Libre Baskerville', serif;
      }
      /* main text */
      .main-text {
@@ -770,7 +774,7 @@ font-family: 'Tilt Prism', cursive;
         /* background-color: #c9f2c9; */
         /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
         /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-        background: url(https://media.istockphoto.com/id/509242466/vector/india-vector-illustration.jpg?s=612x612&w=0&k=20&c=BRQFcFkPz0a5kN1cdOSpaLA9U1Z3CEAqjNFDhV8cmk0=);
+        background: url(./Assets/img/nature-org.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -949,6 +953,7 @@ font-family: 'Tilt Prism', cursive;
     .logo>h1{
       font-size: 50px;
       font-weight: 700;
+      font-family: 'Libre Baskerville', serif;
     }
      /* main text */
      .main-text {
@@ -990,7 +995,7 @@ font-family: 'Tilt Prism', cursive;
         /* background-color: #c9f2c9; */
         /* background: linear-gradient(0deg, rgba(247,247,247,1) 51%, rgba(201,242,201,1) 81%); */
         /* background: linear-gradient(180deg,#474947 0%,#ffffff 100%);  */
-        background: url(https://media.istockphoto.com/id/509242466/vector/india-vector-illustration.jpg?s=612x612&w=0&k=20&c=BRQFcFkPz0a5kN1cdOSpaLA9U1Z3CEAqjNFDhV8cmk0=);
+        background: url(./Assets/img/nature-org.jpg);
         background-repeat: no-repeat;
         background-size: cover;
 
