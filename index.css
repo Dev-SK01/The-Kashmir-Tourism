@@ -1260,7 +1260,7 @@ font-family: 'Tilt Prism', cursive;
   color: black;
    cursor: pointer;
    letter-spacing: 0.3vh;
-   font-weight: 100;
+   font-weight: 900;
    position: relative;
  }
  .slider__content a:after {
@@ -1790,9 +1790,9 @@ font-family: 'Tilt Prism', cursive;
     .slider__content a {
       color: black;
       cursor: pointer;
-      font-size:80pxvh;
+      font-size:20px;
       letter-spacing: 0.3vh;
-      font-weight: 100;
+      font-weight: 900;
       position: relative;
     }
     .slider__content a:after {
@@ -2058,9 +2058,9 @@ font-family: 'Tilt Prism', cursive;
     .slider__content a {
       color: black;
       cursor: pointer;
-      font-size:20pxvh;
+      font-size:20px;
       letter-spacing: 0.3vh;
-      font-weight: 100;
+      font-weight: 900;
       position: relative;
     }
     .slider__content a:after {
@@ -2326,9 +2326,9 @@ font-family: 'Tilt Prism', cursive;
       font-family: 'Castoro Titling', cursive;
       color: black;
       cursor: pointer;
-      font-size:90pxvh;
+      font-size:35px;
       letter-spacing: 0.3vh;
-      font-weight: 100;
+      font-weight: 900;
       position: relative;
     }
     .slider__content a:after {
