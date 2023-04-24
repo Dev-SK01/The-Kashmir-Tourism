@@ -59,3 +59,15 @@ $(document).ready(function () {
 
 var check=document.getElementsByClassName('.go-to-next01');
 console.log(check);
+   console.log("The Kashmir Tourism");
+   document.addEventListener("contextmenu", (event) => {
+            event.preventDefault();
+        });
+  // date update js code //
+  const date=new Date();
+  const year=date.getFullYear();
+  console.log(year);
+  // document.getElementById('year').innerHTML = year+1;
+   var update =document.getElementById('year').innerHTML=year;
+  // end of the year update //
+
