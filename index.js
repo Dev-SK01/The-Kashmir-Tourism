@@ -32,7 +32,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     for (var i = 1; i <= $(".slider__slide01").length; i++) {
       $(".slider__indicators01").append(
-        '<div class="slider__indicator01" data-slide="' + i + '"></div>'
+        '<div class="slider__indicators01" data-slide=' + i + '"></div>'
       );
     }
     setTimeout(function () {
@@ -57,5 +57,5 @@ $(document).ready(function () {
     goToSlides(currentSlide);
   });
 
-var check=document.getElementsByClassName('.go-to-01');
+var check=document.getElementsByClassName('.go-to-next01');
 console.log(check);

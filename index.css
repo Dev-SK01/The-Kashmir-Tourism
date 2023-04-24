@@ -1149,24 +1149,6 @@ font-family: 'Tilt Prism', cursive;
   }
 
 
-  /* ********************************************************************* */
-
-  /* basic style */
-  .charges{
-   text-align: center;
-   color:orange;
-   font-family: 'Stylish', sans-serif;
-   font-weight: bold;
-  }
-  .card{
-   background:transparent;
-  }
-  .fullday{
-   text-decoration:underline;
-   font-weight: bolder;
-  }
-  
-  /* end basic */
 
   /* ********************************************************************************************* */
   /* ********************************************************************************************* */
@@ -1437,7 +1419,7 @@ font-family: 'Tilt Prism', cursive;
  }
  }
 /* desktop responsive */
-@media only screen and (max-width:767.98px) and (min-width: 576px) {
+  @media only screen and (max-width:767.98px) and (min-width: 576px) {
    .containers{
       overflow: hidden;
      }
@@ -2225,7 +2207,7 @@ font-family: 'Tilt Prism', cursive;
       font-family: 'Dancing Script', cursive;
     }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
 
    .containers{
       overflow: hidden;
@@ -2490,252 +2472,1403 @@ font-family: 'Tilt Prism', cursive;
 }
  /* End Of the Slider  */
 
- /* css for cars and charges */
-
-/*  ******************************************************************************** */
+/**********************************************************************************/
  /* Cars And Charges */
 
- .slider01{
-   position: relative;
-   height:600px;
-   width:100vw;
-   background: #777;
-   overflow: hidden;
+
+ /* mobile responsive code for car slider*/
+ @media only screen and (max-width: 575.98px) {
+  .slider01{
+    position: relative;
+    height:300px;
+    width:100vw;
+    background: #777;
+    overflow: hidden;
+  }
+  .slider__wrap01{
+    position: absolute;
+    width:100vw;
+    height:300px;
+    transform: translateX(100vw);
+    top: 0%;
+    left: 0;
+    right: auto;
+    overflow: hidden;
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform-origin: 0% 50%;
+    transition-delay: 450ms;
+    opacity: 0;
+  }
+  .slider__wrap--hacked01 {
+    opacity: 1;
+  }
+  .slider__back01 {
+    position: absolute;
+    width: 100%;
+    height:300px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: none;
+    transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__inner01{
+    width: 100%;
+    height:300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: auto 133.3333%;
+    background-position: center;
+    background-repeat: none;
+    transform: scale(0.75);
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+    opacity: 0;
+    box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+    padding: 15vh;
+    box-sizing: border-box;
+  }
+  .slider__content01{
+    position:absolute;
+    bottom:60%;
+    left: 0 !important;
+    width: auto;
+    transform: translateY(-50%);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Heebo", sans-serif;
+    opacity:1;
+    transition: opacity 450ms;
+  }
+  .slider__content01>h1 {
+    font-weight: 900;
+    font-size:22px;
+    line-height: 0.85;
+    margin-bottom: 0.75vh;
+    pointer-events: none;
+    text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
+  }
+  .slider__content01>a {
+    cursor: pointer;
+    font-size:22px;
+    letter-spacing: 0.3vh;
+    font-weight: 500;
+    color: black;
+    position: relative;
+  }
+  .slider__content01>a:after {
+    content: "";
+    display: block;
+    width: 9vh;
+    background: black;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 6vh;
+    transform: translateY(-50%);
+    transform-origin: 0% 50%;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:before {
+    content: "";
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: block;
+    width: 1vh;
+    height: 1vh;
+    transform: translateX(0) translateY(-50%) rotate(45deg);
+    position: absolute;
+    font-family: "Heebo", sans-serif;
+    font-weight: 100;
+    top: 50%;
+    left: 15vh;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:after {
+    transform: scaleX(1.5);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:before {
+    transform: translateX(6vh) translateY(-50%) rotate(45deg);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__slide01{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 600ms;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .slider__slide--active01 {
+    transform: translatex(0%);
+    z-index: 2;
+  }
+  .slider__slide--active01 .slider__wrap01 {
+    transform: translateX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .slider__slide--active01 .slider__back01 {
+    filter: blur(1.5vh);
+    transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 900ms !important;
+  }
+  .slider__slide--active01 .slider__inner01 {
+    transform: scale(0.8);
+    box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    opacity: 1;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+    transition-delay: 900ms;
+  }
+  .slider__slide01--active01 .slider__content01{
+    opacity: 1;
+    transition-delay: 1350ms;
+  }
+  .slider__slide01:not(.slider__slide--active01) .slider__wrap01 {
+    -webkit-animation-name: hacks;
+            animation-name: hacks;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+    -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  @-webkit-keyframes hacks{
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  @keyframes hacks {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  .slider__slide01:nth-child(1) .slider__back01, .slider__slide01:nth-child(1) .slider__inner01 {
+    background-image: url(./Assets/img/innova\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
+    background-image: url(./Assets/img/honda\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+ 
+  }
+  .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
+    background-image: url(./Assets/img/tata\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
+    background-image: url(./Assets/img/swift\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
+    background-image: url(./Assets/img/etios\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
+    background-image: url(./Assets/img/tavera\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
+    background-image: url(./Assets/img/tempo\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
+    background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+
+   .charges{
+     text-align: center;
+     color:white;
+     /* background-color: white !important; */
+     border-radius: 20px;
+     margin-top: 90px;
+     width: 60vw;
+     font-size: 18px;
+     /* letter-spacing: 1px; */
+     left: 25vw;
+     position: absolute;
+     font-family: 'Stylish', sans-serif;
+     font-weight: bold;
+    }
+    .charges>p{
+     margin: 0;
+    }
+    .card{
+     background:transparent;
+    }
+    .fullday{
+     text-decoration:underline;
+     font-weight: bolder;
+    }
+    
  }
- .slider__wrap01 {
-   position: absolute;
-   width:100vw;
-   height:600px;
-   transform: translateX(100vw);
-   top: 0%;
-   left: 0;
-   right: auto;
-   overflow: hidden;
-   transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-   transform-origin: 0% 50%;
-   transition-delay: 450ms;
-   opacity: 0;
+
+ /* moblie reponsive end car */
+
+ /* 768 responsive code for car */
+ @media only screen and (max-width:767.98px) and (min-width: 576px) {
+  .slider01{
+    position: relative;
+    height:300px;
+    width:100vw;
+    background: #777;
+    overflow: hidden;
+  }
+  .slider__wrap01{
+    position: absolute;
+    width:100vw;
+    height:300px;
+    transform: translateX(100vw);
+    top: 0%;
+    left: 0;
+    right: auto;
+    overflow: hidden;
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform-origin: 0% 50%;
+    transition-delay: 450ms;
+    opacity: 0;
+  }
+  .slider__wrap--hacked01 {
+    opacity: 1;
+  }
+  .slider__back01 {
+    position: absolute;
+    width: 100%;
+    height:300px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: none;
+    transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__inner01{
+    width: 100%;
+    height:300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: auto 133.3333%;
+    background-position: center;
+    background-repeat: none;
+    transform: scale(0.75);
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+    opacity: 0;
+    box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+    padding: 15vh;
+    box-sizing: border-box;
+  }
+  .slider__content01{
+    position:absolute;
+    bottom:55%;
+    left: 0 !important;
+    width: auto;
+    transform: translateY(-50%);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Heebo", sans-serif;
+    opacity:1;
+    transition: opacity 450ms;
+  }
+  .slider__content01>h1 {
+    font-weight: 900;
+    font-size:25px;
+    line-height: 0.85;
+    margin-bottom: 0.75vh;
+    pointer-events: none;
+    text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
+  }
+  .slider__content01>a {
+    cursor: pointer;
+    font-size:25px;
+    letter-spacing: 0.3vh;
+    font-weight: 500;
+    color: black;
+    position: relative;
+  }
+  .slider__content01>a:after {
+    content: "";
+    display: block;
+    width: 9vh;
+    background: black;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 6vh;
+    transform: translateY(-50%);
+    transform-origin: 0% 50%;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:before {
+    content: "";
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: block;
+    width: 1vh;
+    height: 1vh;
+    transform: translateX(0) translateY(-50%) rotate(45deg);
+    position: absolute;
+    font-family: "Heebo", sans-serif;
+    font-weight: 100;
+    top: 50%;
+    left: 15vh;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:after {
+    transform: scaleX(1.5);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:before {
+    transform: translateX(6vh) translateY(-50%) rotate(45deg);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__slide01{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 600ms;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .slider__slide--active01 {
+    transform: translatex(0%);
+    z-index: 2;
+  }
+  .slider__slide--active01 .slider__wrap01 {
+    transform: translateX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .slider__slide--active01 .slider__back01 {
+    filter: blur(1.5vh);
+    transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 900ms !important;
+  }
+  .slider__slide--active01 .slider__inner01 {
+    transform: scale(0.8);
+    box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    opacity: 1;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+    transition-delay: 900ms;
+  }
+  .slider__slide01--active01 .slider__content01{
+    opacity: 1;
+    transition-delay: 1350ms;
+  }
+  .slider__slide01:not(.slider__slide--active01) .slider__wrap01 {
+    -webkit-animation-name: hacks;
+            animation-name: hacks;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+    -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  @-webkit-keyframes hacks{
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  @keyframes hacks {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  .slider__slide01:nth-child(1) .slider__back01, .slider__slide01:nth-child(1) .slider__inner01 {
+    background-image: url(./Assets/img/innova\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
+    background-image: url(./Assets/img/honda\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+ 
+  }
+  .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
+    background-image: url(./Assets/img/tata\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
+    background-image: url(./Assets/img/swift\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
+    background-image: url(./Assets/img/etios\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
+    background-image: url(./Assets/img/tavera\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
+    background-image: url(./Assets/img/tempo\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
+    background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+
+   .charges{
+     text-align: center;
+     color:white;
+     /* background-color: white !important; */
+     border-radius: 20px;
+     margin-top: 90px;
+     width: 60vw;
+     font-size: 25px;
+     /* letter-spacing: 1px; */
+     left: 25vw;
+     bottom: 5px;
+     position: absolute;
+     font-family: 'Stylish', sans-serif;
+     font-weight: bold;
+    }
+    .charges>p{
+     margin: 0;
+    }
+    .card{
+     background:transparent;
+    }
+    .fullday{
+     text-decoration:underline;
+     font-weight: bolder;
+    }
  }
- .slider__wrap--hacked01 {
-   opacity: 1;
+
+ /* 768 size responsive end */
+
+ /* 1119 size responsive code start */
+ @media only screen and (max-width:1199.98px) and (min-width:768px) {
+  .slider01{
+    position: relative;
+    height:600px;
+    width:100vw;
+    background: #777;
+    overflow: hidden;
+  }
+  .slider__wrap01{
+    position: absolute;
+    width:100vw;
+    height:600px;
+    transform: translateX(100vw);
+    top: 0%;
+    left: 0;
+    right: auto;
+    overflow: hidden;
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform-origin: 0% 50%;
+    transition-delay: 450ms;
+    opacity: 0;
+  }
+  .slider__wrap--hacked01 {
+    opacity: 1;
+  }
+  .slider__back01 {
+    position: absolute;
+    width: 100%;
+    height:600px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: none;
+    transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__inner01{
+    width: 100%;
+    height:600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: auto 133.3333%;
+    background-position: center;
+    background-repeat: none;
+    transform: scale(0.75);
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+    opacity: 0;
+    box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+    padding: 15vh;
+    box-sizing: border-box;
+  }
+  .slider__content01{
+    position:absolute;
+    bottom:70%;
+    left: 0 !important;
+    width: auto;
+    transform: translateY(-50%);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Heebo", sans-serif;
+    opacity:1;
+    transition: opacity 450ms;
+  }
+  .slider__content01>h1 {
+    font-weight: 900;
+    font-size:29px;
+    line-height: 0.85;
+    margin-bottom: 0.75vh;
+    pointer-events: none;
+    text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
+  }
+  .slider__content01>a {
+    cursor: pointer;
+    font-size:29px;
+    letter-spacing: 0.3vh;
+    font-weight: 500;
+    color: black;
+    position: relative;
+  }
+  .slider__content01>a:after {
+    content: "";
+    display: block;
+    width: 9vh;
+    background: black;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 6vh;
+    transform: translateY(-50%);
+    transform-origin: 0% 50%;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:before {
+    content: "";
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: block;
+    width: 1vh;
+    height: 1vh;
+    transform: translateX(0) translateY(-50%) rotate(45deg);
+    position: absolute;
+    font-family: "Heebo", sans-serif;
+    font-weight: 100;
+    top: 50%;
+    left: 15vh;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:after {
+    transform: scaleX(1.5);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:before {
+    transform: translateX(6vh) translateY(-50%) rotate(45deg);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__slide01{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 600ms;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .slider__slide--active01 {
+    transform: translatex(0%);
+    z-index: 2;
+  }
+  .slider__slide--active01 .slider__wrap01 {
+    transform: translateX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .slider__slide--active01 .slider__back01 {
+    filter: blur(1.5vh);
+    transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 900ms !important;
+  }
+  .slider__slide--active01 .slider__inner01 {
+    transform: scale(0.8);
+    box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    opacity: 1;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+    transition-delay: 900ms;
+  }
+  .slider__slide01--active01 .slider__content01{
+    opacity: 1;
+    transition-delay: 1350ms;
+  }
+  .slider__slide01:not(.slider__slide--active01) .slider__wrap01 {
+    -webkit-animation-name: hacks;
+            animation-name: hacks;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+    -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  @-webkit-keyframes hacks{
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  @keyframes hacks {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  .slider__slide01:nth-child(1) .slider__back01, .slider__slide01:nth-child(1) .slider__inner01 {
+    background-image: url(./Assets/img/innova\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
+    background-image: url(./Assets/img/honda\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+ 
+  }
+  .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
+    background-image: url(./Assets/img/tata\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
+    background-image: url(./Assets/img/swift\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
+    background-image: url(./Assets/img/etios\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
+    background-image: url(./Assets/img/tavera\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
+    background-image: url(./Assets/img/tempo\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
+    background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+
+   .charges{
+     text-align: center;
+     color:white;
+     /* background-color: white !important; */
+     border-radius: 20px;
+     margin-top: 90px;
+     width: 60vw;
+     font-size: 29px;
+     /* letter-spacing: 1px; */
+     left: 22vw;
+     bottom: 5px;
+     position: absolute;
+     font-family: 'Stylish', sans-serif;
+     font-weight: bold;
+    }
+    .charges>p{
+     margin: 0;
+    }
+    .card{
+     background:transparent;
+    }
+    .fullday{
+     text-decoration:underline;
+     font-weight: bolder;
+    }
  }
- .slider__back01 {
-   position: absolute;
-   width: 100%;
-   height:600px;
-   background-size: auto 100%;
-   background-position: center;
-   background-repeat: none;
-   transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+ 
+ /* 1199 size responsive end for code */
+
+ /* 1200 size responsive for code start*/
+ @media only screen and (min-width: 1200px) {
+    .slider01{
+      position: relative;
+      height:600px;
+      width:100vw;
+      background: #777;
+      overflow: hidden;
+    }
+    .slider__wrap01{
+      position: absolute;
+      width:100vw;
+      height:600px;
+      transform: translateX(100vw);
+      top: 0%;
+      left: 0;
+      right: auto;
+      overflow: hidden;
+      transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transform-origin: 0% 50%;
+      transition-delay: 450ms;
+      opacity: 0;
+    }
+    .slider__wrap--hacked01 {
+      opacity: 1;
+    }
+    .slider__back01 {
+      position: absolute;
+      width: 100%;
+      height:600px;
+      background-size: auto 100%;
+      background-position: center;
+      background-repeat: none;
+      transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .slider__inner01{
+      width: 100%;
+      height:600px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: auto 133.3333%;
+      background-position: center;
+      background-repeat: none;
+      transform: scale(0.75);
+      transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+      opacity: 0;
+      box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+      padding: 15vh;
+      box-sizing: border-box;
+    }
+    .slider__content01{
+      position:absolute;
+      bottom:70%;
+      left: 0 !important;
+      width: auto;
+      transform: translateY(-50%);
+      color: black;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      font-family: "Heebo", sans-serif;
+      opacity:1;
+      transition: opacity 450ms;
+    }
+    .slider__content01>h1 {
+      font-weight: 900;
+      font-size:29px;
+      line-height: 0.85;
+      margin-bottom: 0.75vh;
+      pointer-events: none;
+      text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
+    }
+    .slider__content01>a {
+      cursor: pointer;
+      font-size:29px;
+      letter-spacing: 0.3vh;
+      font-weight: 500;
+      color: black;
+      position: relative;
+    }
+    .slider__content01>a:after {
+      content: "";
+      display: block;
+      width: 9vh;
+      background: black;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 6vh;
+      transform: translateY(-50%);
+      transform-origin: 0% 50%;
+      transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .slider__content01>a:before {
+      content: "";
+      border-top: 1px solid black;
+      border-right: 1px solid black;
+      display: block;
+      width: 1vh;
+      height: 1vh;
+      transform: translateX(0) translateY(-50%) rotate(45deg);
+      position: absolute;
+      font-family: "Heebo", sans-serif;
+      font-weight: 100;
+      top: 50%;
+      left: 15vh;
+      transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .slider__content01>a:hover:after {
+      transform: scaleX(1.5);
+      transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .slider__content01>a:hover:before {
+      transform: translateX(6vh) translateY(-50%) rotate(45deg);
+      transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    .slider__slide01{
+      position: absolute;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition-delay: 600ms;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .slider__slide--active01 {
+      transform: translatex(0%);
+      z-index: 2;
+    }
+    .slider__slide--active01 .slider__wrap01 {
+      transform: translateX(0);
+      transform-origin: 100% 50%;
+      opacity: 1;
+      -webkit-animation: none;
+              animation: none;
+    }
+    .slider__slide--active01 .slider__back01 {
+      filter: blur(1.5vh);
+      transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition-delay: 900ms !important;
+    }
+    .slider__slide--active01 .slider__inner01 {
+      transform: scale(0.8);
+      box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+      pointer-events: auto;
+      opacity: 1;
+      transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+      transition-delay: 900ms;
+    }
+    .slider__slide01--active01 .slider__content01{
+      opacity: 1;
+      transition-delay: 1350ms;
+    }
+    .slider__slide01:not(.slider__slide--active01) .slider__wrap01 {
+      -webkit-animation-name: hacks;
+              animation-name: hacks;
+      -webkit-animation-duration: 900ms;
+              animation-duration: 900ms;
+      -webkit-animation-delay: 450ms;
+              animation-delay: 450ms;
+      -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+              animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    @-webkit-keyframes hacks{
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateX(-100vw);
+        opacity: 1;
+      }
+      51% {
+        transform: translateX(-100vw);
+        opacity: 0;
+      }
+      52% {
+        transform: translateX(100vw);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(100vw);
+        opacity: 1;
+      }
+    }
+    @keyframes hacks {
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      50% {
+        transform: translateX(-100vw);
+        opacity: 1;
+      }
+      51% {
+        transform: translateX(-100vw);
+        opacity: 0;
+      }
+      52% {
+        transform: translateX(100vw);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(100vw);
+        opacity: 1;
+      }
+    }
+    .slider__slide01:nth-child(1) .slider__back01, .slider__slide01:nth-child(1) .slider__inner01 {
+      background-image: url(./Assets/img/innova\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
+      background-image: url(./Assets/img/honda\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+   
+    }
+    .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
+      background-image: url(./Assets/img/tata\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
+      background-image: url(./Assets/img/swift\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
+      background-image: url(./Assets/img/etios\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
+      background-image: url(./Assets/img/tavera\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
+      background-image: url(./Assets/img/tempo\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+    .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
+      background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
+      background-size: cover;
+      background-repeat:no-repeat;
+    }
+  
+     .charges{
+       text-align: center;
+       color:white;
+       /* background-color: white !important; */
+       border-radius: 20px;
+       margin-top: 90px;
+       width: 60vw;
+       font-size: 29px;
+       /* letter-spacing: 1px; */
+       left: 22vw;
+       bottom: 5px;
+       position: absolute;
+       font-family: 'Stylish', sans-serif;
+       font-weight: bold;
+      }
+      .charges>p{
+       margin: 0;
+      }
+      .card{
+       background:transparent;
+      }
+      .fullday{
+       text-decoration:underline;
+       font-weight: bolder;
+      }
  }
- .slider__inner01{
-   width: 100%;
-   height:600px;
-   position: absolute;
-   top: 0;
-   left: 0%;
-   background-size: auto 133.3333%;
-   background-position: center;
-   background-repeat: none;
-   transform: scale(0.75);
-   transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
-   opacity: 0;
-   box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-   padding: 15vh;
-   box-sizing: border-box;
- }
- .slider__content01 {
-   position: relative;
-   top: 50%;
-   width: auto;
-   transform: translateY(-50%);
-   color: white;
-   font-family: "Heebo", sans-serif;
-   opacity:1;
-   transition: opacity 450ms;
- }
- .slider__content01>h1 {
-   font-weight: 900;
-   font-size:24px;
-   line-height: 0.85;
-   margin-bottom: 0.75vh;
-   pointer-events: none;
-   text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
- }
- .slider__content01>a {
-   cursor: pointer;
-   font-size:20px;
-   letter-spacing: 0.3vh;
-   font-weight: 100;
-   position: relative;
- }
- .slider__content01>a:after {
-   content: "";
-   display: block;
-   width: 9vh;
-   background: white;
-   height: 1px;
-   position: absolute;
-   top: 50%;
-   left: 6vh;
-   transform: translateY(-50%);
-   transform-origin: 0% 50%;
-   transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
- }
- .slider__content01>a:before {
-   content: "";
-   border-top: 1px solid white;
-   border-right: 1px solid white;
-   display: block;
-   width: 1vh;
-   height: 1vh;
-   transform: translateX(0) translateY(-50%) rotate(45deg);
-   position: absolute;
-   font-family: "Heebo", sans-serif;
-   font-weight: 100;
-   top: 50%;
-   left: 15vh;
-   transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
- }
- .slider__content01>a:hover:after {
-   transform: scaleX(1.5);
-   transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
- }
- .slider__content01>a:hover:before {
-   transform: translateX(6vh) translateY(-50%) rotate(45deg);
-   transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
- }
- .slider__slide01 {
-   position: absolute;
-   left: 0;
-   height: 100vh;
-   width: 100vw;
-   transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-   transition-delay: 600ms;
-   pointer-events: none;
-   z-index: 0;
- }
- .slider__slide--active01 {
-   transform: translatex(0%);
-   z-index: 2;
- }
- .slider__slide--active01 .slider__wrap01 {
-   transform: translateX(0);
-   transform-origin: 100% 50%;
-   opacity: 1;
-   -webkit-animation: none;
-           animation: none;
- }
- .slider__slide--active01 .slider__back01 {
-   filter: blur(1.5vh);
-   transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
-   transition-delay: 900ms !important;
- }
- .slider__slide--active01 .slider__inner01 {
-   transform: scale(0.8);
-   box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
-   pointer-events: auto;
-   opacity: 1;
-   transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
-   transition-delay: 900ms;
- }
- .slider__slide01--active01 .slider__content01{
-   opacity: 1;
-   transition-delay: 1350ms;
- }
- .slider__slide01:not(.slider__slide--active01) .slider__wrap01 {
-   -webkit-animation-name: hacks;
-           animation-name: hacks;
-   -webkit-animation-duration: 900ms;
-           animation-duration: 900ms;
-   -webkit-animation-delay: 450ms;
-           animation-delay: 450ms;
-   -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
-           animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
- }
- @-webkit-keyframes hacks{
-   0% {
-     transform: translateX(0);
-     opacity: 1;
-   }
-   50% {
-     transform: translateX(-100vw);
-     opacity: 1;
-   }
-   51% {
-     transform: translateX(-100vw);
-     opacity: 0;
-   }
-   52% {
-     transform: translateX(100vw);
-     opacity: 0;
-   }
-   100% {
-     transform: translateX(100vw);
-     opacity: 1;
-   }
- }
- @keyframes hacks {
-   0% {
-     transform: translateX(0);
-     opacity: 1;
-   }
-   50% {
-     transform: translateX(-100vw);
-     opacity: 1;
-   }
-   51% {
-     transform: translateX(-100vw);
-     opacity: 0;
-   }
-   52% {
-     transform: translateX(100vw);
-     opacity: 0;
-   }
-   100% {
-     transform: translateX(100vw);
-     opacity: 1;
-   }
- }
- .slider__slide01:nth-child(1) .slider__back01, .slider__slide01:nth-child(1) .slider__inner01 {
-   background-image: url(https://pbs.twimg.com/media/EhTqeTQUcAAIrzj?format=jpg&name=4096x4096);
- }
- .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
-   background-image: url(https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20201015102234_2021-Toyota-Innova-Crysta-facelift-white-studio.jpg&w=730&h=484&q=75&c=1);
- }
- .slider__slide01:nth-child(3) .slider__back, .slider__slide01:nth-child(3) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(4) .slider__back, .slider__slide01:nth-child(4) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(5) .slider__back, .slider__slide01:nth-child(5) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(6) .slider__back, .slider__slide01:nth-child(6) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(7) .slider__back, .slider__slide01:nth-child(7) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(8) .slider__back, .slider__slide01:nth-child(8) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(9) .slider__back, .slider__slide01:nth-child(9) .slider__inner01 {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(10) .slider__back, .slider__slide01:nth-child(10) .slider__inne01r {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(11) .slider__back, .slider__slide01:nth-child(11) .slider__inne01r {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(12) .slider__back, .slider__slide01:nth-child(12) .slider__inne01r {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(13) .slider__back, .slider__slide01:nth-child(13) .slider__inne01r {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
- .slider__slide01:nth-child(14) .slider__back, .slider__slide01:nth-child(14) .slider__inne01r {
-   background-image: url(https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111-1500x1000.jpg);
- }
+/* 1200 size responsive for code end */
+
+/* 1400 size responsive code start */
+@media only screen and (min-width: 1400px) {
+  .slider01{
+    position: relative;
+    height:600px;
+    width:100vw;
+    background: #777;
+    overflow: hidden;
+  }
+  .slider__wrap01{
+    position: absolute;
+    width:100vw;
+    height:600px;
+    transform: translateX(100vw);
+    top: 0%;
+    left: 0;
+    right: auto;
+    overflow: hidden;
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform-origin: 0% 50%;
+    transition-delay: 450ms;
+    opacity: 0;
+  }
+  .slider__wrap--hacked01 {
+    opacity: 1;
+  }
+  .slider__back01 {
+    position: absolute;
+    width: 100%;
+    height:600px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: none;
+    transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__inner01{
+    width: 100%;
+    height:600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: auto 133.3333%;
+    background-position: center;
+    background-repeat: none;
+    transform: scale(0.75);
+    transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+    opacity: 0;
+    box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+    padding: 15vh;
+    box-sizing: border-box;
+  }
+  .slider__content01{
+    position:absolute;
+    bottom:70%;
+    left: 0 !important;
+    width: auto;
+    transform: translateY(-50%);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Heebo", sans-serif;
+    opacity:1;
+    transition: opacity 450ms;
+  }
+  .slider__content01>h1 {
+    font-weight: 900;
+    font-size:29px;
+    line-height: 0.85;
+    margin-bottom: 0.75vh;
+    pointer-events: none;
+    text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
+  }
+  .slider__content01>a {
+    cursor: pointer;
+    font-size:29px;
+    letter-spacing: 0.3vh;
+    font-weight: 500;
+    color: black;
+    position: relative;
+  }
+  .slider__content01>a:after {
+    content: "";
+    display: block;
+    width: 9vh;
+    background: black;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 6vh;
+    transform: translateY(-50%);
+    transform-origin: 0% 50%;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:before {
+    content: "";
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    display: block;
+    width: 1vh;
+    height: 1vh;
+    transform: translateX(0) translateY(-50%) rotate(45deg);
+    position: absolute;
+    font-family: "Heebo", sans-serif;
+    font-weight: 100;
+    top: 50%;
+    left: 15vh;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:after {
+    transform: scaleX(1.5);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__content01>a:hover:before {
+    transform: translateX(6vh) translateY(-50%) rotate(45deg);
+    transition: transform 1200ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  .slider__slide01{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 600ms;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .slider__slide--active01 {
+    transform: translatex(0%);
+    z-index: 2;
+  }
+  .slider__slide--active01 .slider__wrap01 {
+    transform: translateX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    -webkit-animation: none;
+            animation: none;
+  }
+  .slider__slide--active01 .slider__back01 {
+    filter: blur(1.5vh);
+    transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-delay: 900ms !important;
+  }
+  .slider__slide--active01 .slider__inner01 {
+    transform: scale(0.8);
+    box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+    pointer-events: auto;
+    opacity: 1;
+    transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+    transition-delay: 900ms;
+  }
+  .slider__slide01--active01 .slider__content01{
+    opacity: 1;
+    transition-delay: 1350ms;
+  }
+  .slider__slide01:not(.slider__slide--active01) .slider__wrap01 {
+    -webkit-animation-name: hacks;
+            animation-name: hacks;
+    -webkit-animation-duration: 900ms;
+            animation-duration: 900ms;
+    -webkit-animation-delay: 450ms;
+            animation-delay: 450ms;
+    -webkit-animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+            animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  @-webkit-keyframes hacks{
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  @keyframes hacks {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-100vw);
+      opacity: 1;
+    }
+    51% {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    52% {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(100vw);
+      opacity: 1;
+    }
+  }
+  .slider__slide01:nth-child(1) .slider__back01, .slider__slide01:nth-child(1) .slider__inner01 {
+    background-image: url(./Assets/img/innova\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
+    background-image: url(./Assets/img/honda\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+ 
+  }
+  .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
+    background-image: url(./Assets/img/tata\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
+    background-image: url(./Assets/img/swift\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
+    background-image: url(./Assets/img/etios\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
+    background-image: url(./Assets/img/tavera\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
+    background-image: url(./Assets/img/tempo\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+  .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
+    background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+
+   .charges{
+     text-align: center;
+     color:white;
+     /* background-color: white !important; */
+     border-radius: 20px;
+     margin-top: 90px;
+     width: 60vw;
+     font-size: 29px;
+     /* letter-spacing: 1px; */
+     left: 22vw;
+     bottom: 5px;
+     position: absolute;
+     font-family: 'Stylish', sans-serif;
+     font-weight: bold;
+    }
+    .charges>p{
+     margin: 0;
+    }
+    .card{
+     background:transparent;
+    }
+    .fullday{
+     text-decoration:underline;
+     font-weight: bolder;
+    }
+}
