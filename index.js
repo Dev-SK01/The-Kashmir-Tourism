@@ -57,10 +57,10 @@ $(document).ready(function () {
     goToSlides(currentSlide);
   });
 
-  // console.log("The Kashmir Tourism");
-  // document.addEventListener("contextmenu", (event) => {
-  //          event.preventDefault();
-  //       });
+   console.log("The Kashmir Tourism");
+   document.addEventListener("contextmenu", (event) => {
+            event.preventDefault();
+        });
   // date update js code //
   const date=new Date();
   const year=date.getFullYear();
