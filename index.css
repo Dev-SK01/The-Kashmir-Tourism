@@ -1174,7 +1174,7 @@ font-family: 'Tilt Prism', cursive;
   font-size: 1.3rem;
   float: inline-end;
   margin-top: 33%;
-
+  cursor: pointer;
  }
  /* previous btn  css */
  .prev{
@@ -1183,6 +1183,7 @@ font-family: 'Tilt Prism', cursive;
   font-size: 1.3rem;
   float:inline-start;
   margin-top: 33%;
+  cursor: pointer;
  }
   .slider {
    position: relative;
@@ -1392,8 +1393,8 @@ font-family: 'Tilt Prism', cursive;
    background-image: url(https://images.pexels.com/photos/2523644/pexels-photo-2523644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
  }
           /* slider content text color */
-          .slider__slide:nth-child(1) .slider__content>h1,.next>i,.prev>i{
-            color:white;
+          .slider__slide:nth-child(1) .slider__content>h1{
+            color:rgb(255, 255, 255);
             /* From https://css.glass */
             background: rgba(5, 5, 5, 0.31);
             border-radius:8px;
@@ -1421,7 +1422,7 @@ font-family: 'Tilt Prism', cursive;
    background-image: url(https://lh3.googleusercontent.com/proxy/kcFhudzDfjqLkTJbn-SGOG-50LFYbPNc3HZoYVAjLY442AyfMRXRlicCZyBHK2mlF8K9zPG-JafBTyOhTu4HWQjvv-cImvv_xTvNkBZXCQcbxGZ-grX7Vm-hq5WHR-n5a5ruIT740JhPa6k2sB_u2gobanyMOg=s680-w680-h510);
  }
        /* slider content text color */
-       .slider__slide:nth-child(3) .slider__content>h1,.next>i,.prev>i{
+       .slider__slide:nth-child(3) .slider__content>h1{
         color:white;
         /* From https://css.glass */
         background: rgba(5, 5, 5, 0.31);
