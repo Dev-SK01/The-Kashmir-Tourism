@@ -18,7 +18,7 @@ $(document).ready(function () {
     );
   }
   
-  $(".slider__next, .go-to-next").on("click", function () {
+  $(".slider__next, .next").on("click", function () {
     var currentSlide = Number($(".slider__slide--active").data("slide"));
     var totalSlides = $(".slider__slide").length;
     currentSlide++;
@@ -27,7 +27,16 @@ $(document).ready(function () {
     }
     goToSlide(currentSlide);
   });
-
+// previous slider js
+$(".slider__next, .prev").on("click", function () {
+  var currentSlide = Number($(".slider__slide--active").data("slide"));
+  var totalSlides = $(".slider__slide").length;
+  currentSlide--;
+  if (currentSlide > totalSlides) {
+    currentSlide = 1;
+  }
+  goToSlide(currentSlide);
+});
 //   cars slide
 $(document).ready(function () {
     for (var i = 1; i <= $(".slider__slide01").length; i++) {
