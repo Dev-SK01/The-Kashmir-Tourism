@@ -37,7 +37,16 @@ $(".slider__next, .prev").on("click", function () {
   }
   goToSlide(currentSlide);
 });
+
+
 //   cars slide
+ 
+  
+
+
+
+
+
 $(document).ready(function () {
     for (var i = 1; i <= $(".slider__slide01").length; i++) {
       $(".slider__indicators01").append(
@@ -56,7 +65,7 @@ $(document).ready(function () {
     );
   }
   
-  $(".slider__next01, .go-to-next01").on("click", function () {
+  $(".slider__next01, .next01").on("click", function () {
     var currentSlide = Number($(".slider__slide--active01").data("slide"));
     var totalSlides = $(".slider__slide01").length;
     currentSlide++;
@@ -65,6 +74,16 @@ $(document).ready(function () {
     }
     goToSlides(currentSlide);
   });
+// previos
+$(".slider__next01, .prev01").on("click", function () {
+  var currentSlide = Number($(".slider__slide--active01").data("slide"));
+  var totalSlides = $(".slider__slide01").length;
+  currentSlide--;
+  if (currentSlide > totalSlides) {
+    currentSlide = 1;
+  }
+  goToSlides(currentSlide);
+});
 
 var check=document.getElementsByClassName('.go-to-next01');
 console.log(check);

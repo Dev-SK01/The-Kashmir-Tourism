@@ -1175,7 +1175,7 @@ font-family: 'Tilt Prism', cursive;
   float:right;
   cursor: pointer;
   width:5%;
-  margin-top: 30%;
+  margin-top: 100px;
  }
  /* previous btn  css */
  .prev{
@@ -1184,7 +1184,7 @@ font-family: 'Tilt Prism', cursive;
   font-size: 1.3rem;
   float:left;
   cursor: pointer;
-  margin-top: 30%;
+  margin-top: 100px;
  }
   .slider {
    position: relative;
@@ -1649,8 +1649,7 @@ font-family: 'Tilt Prism', cursive;
       transform: scale(0.75);
       transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
       opacity: 0;
-      box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-      padding: 15vh;
+      box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);;
       box-sizing: border-box;
     }
     .slider__content {
@@ -2684,6 +2683,26 @@ font-family: 'Tilt Prism', cursive;
     background: #777;
     overflow: hidden;
   }
+    /* next btn css */
+ .next01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  float:right;
+  margin-top: 100px;
+  cursor: pointer;
+ 
+ }
+ /* previous btn  css */
+ .prev01{
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 100px;
+  font-size: 1.3rem;
+  float: left;
+  cursor: pointer;
+ 
+ }
   .slider__wrap01{
     position: absolute;
     width:100vw;
@@ -2713,7 +2732,7 @@ font-family: 'Tilt Prism', cursive;
   .slider__inner01{
     width: 100%;
     height:300px;
-    position: absolute;
+   position: absolute; 
     top: 0;
     left: 0;
     background-size: auto 133.3333%;
@@ -2723,17 +2742,12 @@ font-family: 'Tilt Prism', cursive;
     transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
     opacity: 0;
     box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-    padding: 15vh;
     box-sizing: border-box;
   }
   .slider__content01{
-    position:absolute;
-    bottom:60%;
-    left: 0 !important;
+    text-align: center;
     width: auto;
-    transform: translateY(-50%);
     color: black;
-    padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0);
     font-family: "Heebo", sans-serif;
@@ -2743,8 +2757,6 @@ font-family: 'Tilt Prism', cursive;
   .slider__content01>h1 {
     font-weight: 900;
     font-size:22px;
-    line-height: 0.85;
-    margin-bottom: 0.75vh;
     pointer-events: none;
     text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
   }
@@ -2889,41 +2901,129 @@ font-family: 'Tilt Prism', cursive;
     background-size: cover;
     background-repeat:no-repeat;
   }
-  .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
+  /* slider content text color */
+  .slider__slide01:nth-child(1) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
+  }
+  .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01{
     background-image: url(./Assets/img/honda\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
  
   }
+   /* slider content text color */
+   .slider__slide01:nth-child(2) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
+  }
   .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
     background-image: url(./Assets/img/tata\ \(1\).jpg);
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; 
+  }
+   /* slider content text color */
+   .slider__slide01:nth-child(3) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
   }
   .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
     background-image: url(./Assets/img/swift\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+   /* slider content text color */
+   .slider__slide01:nth-child(4) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
+  }
   .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
     background-image: url(./Assets/img/etios\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
+  }
+   /* slider content text color */
+   .slider__slide01:nth-child(5) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
   }
   .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
     background-image: url(./Assets/img/tavera\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+   /* slider content text color */
+   .slider__slide01:nth-child(6) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
+  }
   .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
     background-image: url(./Assets/img/tempo\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+   /* slider content text color */
+   .slider__slide01:nth-child(7) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
+  }
   .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
     background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
+  }
+   /* slider content text color */
+   .slider__slide01:nth-child(8) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
   }
 
    .charges{
@@ -2931,11 +3031,11 @@ font-family: 'Tilt Prism', cursive;
      color:white;
      /* background-color: white !important; */
      border-radius: 20px;
-     margin-top: 90px;
+     margin-top: 160px;
      width: 60vw;
      font-size: 18px;
      /* letter-spacing: 1px; */
-     left: 25vw;
+     left: 21vw;
      position: absolute;
      font-family: 'Stylish', sans-serif;
      font-weight: bold;
@@ -2989,6 +3089,26 @@ font-family: 'Tilt Prism', cursive;
     background-position: center;
     background-repeat: none;
     transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  } 
+   /* next btn css */
+  .next01{
+   text-align: center;
+   font-weight: bolder;
+   font-size: 1.3rem;
+   float:right;
+  width: 15px;
+   cursor: pointer;
+   margin-top: 100px;
+  }
+  /* previous btn  css */
+  .prev01{
+   text-align: center;
+   font-weight: bolder;
+   font-size: 1.3rem;
+   float:left;
+  width: 5px;
+   cursor: pointer;
+   margin-top: 100px;
   }
   .slider__inner01{
     width: 100%;
@@ -3003,17 +3123,12 @@ font-family: 'Tilt Prism', cursive;
     transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
     opacity: 0;
     box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-    padding: 15vh;
     box-sizing: border-box;
   }
   .slider__content01{
-    position:absolute;
-    bottom:55%;
-    left: 0 !important;
+text-align: center;
     width: auto;
-    transform: translateY(-50%);
     color: black;
-    padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0);
     font-family: "Heebo", sans-serif;
@@ -3023,7 +3138,6 @@ font-family: 'Tilt Prism', cursive;
   .slider__content01>h1 {
     font-weight: 900;
     font-size:25px;
-    line-height: 0.85;
     margin-bottom: 0.75vh;
     pointer-events: none;
     text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
@@ -3169,53 +3283,141 @@ font-family: 'Tilt Prism', cursive;
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(1) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
     background-image: url(./Assets/img/honda\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
  
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(2) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
     background-image: url(./Assets/img/tata\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(3) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
     background-image: url(./Assets/img/swift\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(4) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
     background-image: url(./Assets/img/etios\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(5) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
     background-image: url(./Assets/img/tavera\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(6) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
     background-image: url(./Assets/img/tempo\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(7) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
     background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(8) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
 
    .charges{
      text-align: center;
      color:white;
      /* background-color: white !important; */
      border-radius: 20px;
-     margin-top: 90px;
+     margin-top: 60px;
      width: 60vw;
      font-size: 25px;
      /* letter-spacing: 1px; */
-     left: 25vw;
+     left: 21vw;
      bottom: 5px;
      position: absolute;
      font-family: 'Stylish', sans-serif;
@@ -3270,6 +3472,26 @@ font-family: 'Tilt Prism', cursive;
     background-repeat: none;
     transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
+    /* next btn css */
+ .next01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  float:right;
+  cursor: pointer;
+  width: 15px;
+  margin-top: 250px;
+ }
+ /* previous btn  css */
+ .prev01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  width: 5px;
+  float:left;
+  cursor: pointer;
+  margin-top: 250px;
+ }
   .slider__inner01{
     width: 100%;
     height:600px;
@@ -3283,17 +3505,12 @@ font-family: 'Tilt Prism', cursive;
     transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
     opacity: 0;
     box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-    padding: 15vh;
     box-sizing: border-box;
   }
   .slider__content01{
-    position:absolute;
-    bottom:70%;
-    left: 0 !important;
+text-align: center;
     width: auto;
-    transform: translateY(-50%);
     color: black;
-    padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0);
     font-family: "Heebo", sans-serif;
@@ -3303,8 +3520,7 @@ font-family: 'Tilt Prism', cursive;
   .slider__content01>h1 {
     font-weight: 900;
     font-size:29px;
-    line-height: 0.85;
-    margin-bottom: 0.75vh;
+    /* margin-bottom: 0.75vh; */
     pointer-events: none;
     text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
   }
@@ -3449,42 +3665,129 @@ font-family: 'Tilt Prism', cursive;
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(1) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
     background-image: url(./Assets/img/honda\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
  
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(2) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
     background-image: url(./Assets/img/tata\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(3) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
     background-image: url(./Assets/img/swift\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(4) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
     background-image: url(./Assets/img/etios\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
+  }  /* slider content text color */
+  .slider__slide01:nth-child(5) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+    color:white;
+    /* From https://css.glass */
+    background: rgba(5, 5, 5, 0.31);
+    border-radius:8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(5, 5, 5, 0.3);
   }
   .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
     background-image: url(./Assets/img/tavera\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(6) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
     background-image: url(./Assets/img/tempo\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(7) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
   .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
     background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+    /* slider content text color */
+    .slider__slide01:nth-child(8) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    }
 
    .charges{
      text-align: center;
@@ -3495,7 +3798,7 @@ font-family: 'Tilt Prism', cursive;
      width: 60vw;
      font-size: 29px;
      /* letter-spacing: 1px; */
-     left: 22vw;
+     left: 20vw;
      bottom: 5px;
      position: absolute;
      font-family: 'Stylish', sans-serif;
@@ -3550,6 +3853,26 @@ font-family: 'Tilt Prism', cursive;
       background-repeat: none;
       transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
+      /* next btn css */
+ .next01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  float:right;
+  width: 15px;
+  cursor: pointer;
+  margin-top: 250px;
+ }
+ /* previous btn  css */
+ .prev01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  float:left;
+  width: 5px;
+  cursor: pointer;
+  margin-top: 250px;
+ }
     .slider__inner01{
       width: 100%;
       height:600px;
@@ -3562,18 +3885,13 @@ font-family: 'Tilt Prism', cursive;
       transform: scale(0.75);
       transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
       opacity: 0;
-      box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-      padding: 15vh;
+      box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);;
       box-sizing: border-box;
     }
     .slider__content01{
-      position:absolute;
-      bottom:70%;
-      left: 0 !important;
+text-align: center;
       width: auto;
-      transform: translateY(-50%);
       color: black;
-      padding: 10px;
       border-radius: 20px;
       background-color: rgba(255, 255, 255, 0);
       font-family: "Heebo", sans-serif;
@@ -3583,7 +3901,6 @@ font-family: 'Tilt Prism', cursive;
     .slider__content01>h1 {
       font-weight: 900;
       font-size:29px;
-      line-height: 0.85;
       margin-bottom: 0.75vh;
       pointer-events: none;
       text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
@@ -3729,53 +4046,140 @@ font-family: 'Tilt Prism', cursive;
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(1) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
       background-image: url(./Assets/img/honda\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
-   
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(2) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
       background-image: url(./Assets/img/tata\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(3) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
       background-image: url(./Assets/img/swift\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(4) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
       background-image: url(./Assets/img/etios\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(5) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
       background-image: url(./Assets/img/tavera\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(6) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
       background-image: url(./Assets/img/tempo\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(7) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
     .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
       background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
       background-size: cover;
       background-repeat:no-repeat;
     }
+       /* slider content text color */
+       .slider__slide01:nth-child(8) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   
      .charges{
        text-align: center;
        color:white;
        /* background-color: white !important; */
        border-radius: 20px;
-       margin-top: 90px;
+       margin-top: 120px;
        width: 60vw;
        font-size: 29px;
        /* letter-spacing: 1px; */
-       left: 22vw;
+       left: 18vw;
        bottom: 5px;
        position: absolute;
        font-family: 'Stylish', sans-serif;
@@ -3830,6 +4234,26 @@ font-family: 'Tilt Prism', cursive;
     background-repeat: none;
     transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   }
+    /* next btn css */
+ .next01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  float:right;
+  cursor: pointer;
+  width: 15px;
+  margin-top: 250px;
+ }
+ /* previous btn  css */
+ .prev01{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  float:left;
+  width: 5px;
+  cursor: pointer;
+  margin-top: 250px;
+ }
   .slider__inner01{
     width: 100%;
     height:600px;
@@ -3843,17 +4267,12 @@ font-family: 'Tilt Prism', cursive;
     transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
     opacity: 0;
     box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
-    padding: 15vh;
     box-sizing: border-box;
   }
   .slider__content01{
-    position:absolute;
-    bottom:70%;
-    left: 0 !important;
+text-align: center;
     width: auto;
-    transform: translateY(-50%);
     color: black;
-    padding: 10px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0);
     font-family: "Heebo", sans-serif;
@@ -3863,7 +4282,6 @@ font-family: 'Tilt Prism', cursive;
   .slider__content01>h1 {
     font-weight: 900;
     font-size:29px;
-    line-height: 0.85;
     margin-bottom: 0.75vh;
     pointer-events: none;
     text-shadow: 0 0.375vh 0.75vh rgba(0, 0, 0, 0.1);
@@ -4009,42 +4427,130 @@ font-family: 'Tilt Prism', cursive;
     background-size: cover;
     background-repeat:no-repeat;
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(1) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   .slider__slide01:nth-child(2) .slider__back01, .slider__slide01:nth-child(2) .slider__inner01 {
     background-image: url(./Assets/img/honda\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
  
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(2) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   .slider__slide01:nth-child(3) .slider__back01, .slider__slide01:nth-child(3) .slider__inner01 {
     background-image: url(./Assets/img/tata\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(3) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   .slider__slide01:nth-child(4) .slider__back01, .slider__slide01:nth-child(4) .slider__inner01 {
     background-image: url(./Assets/img/swift\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(4) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   .slider__slide01:nth-child(5) .slider__back01, .slider__slide01:nth-child(5) .slider__inner01 {
     background-image: url(./Assets/img/etios\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(5) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   .slider__slide01:nth-child(6) .slider__back01, .slider__slide01:nth-child(6) .slider__inner01 {
     background-image: url(./Assets/img/tavera\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+     /* slider content text color */
+     .slider__slide01:nth-child(6) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+      color:white;
+      /* From https://css.glass */
+      background: rgba(5, 5, 5, 0.31);
+      border-radius:8px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(5, 5, 5, 0.3);
+    } 
   .slider__slide01:nth-child(7) .slider__back01, .slider__slide01:nth-child(7) .slider__inner01 {
     background-image: url(./Assets/img/tempo\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(7) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
   .slider__slide01:nth-child(8) .slider__back01, .slider__slide01:nth-child(8) .slider__inner01 {
     background-image: url(./Assets/img/32\ seater\ bus\ \(1\).jpg);
     background-size: cover;
     background-repeat:no-repeat;
   }
+      /* slider content text color */
+      .slider__slide01:nth-child(8) .slider__content01>h1,.next01>i,.prev01>i,.slider__inner01>.charges{
+        color:white;
+        /* From https://css.glass */
+        background: rgba(5, 5, 5, 0.31);
+        border-radius:8px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(5, 5, 5, 0.3);
+      }
 
    .charges{
      text-align: center;
